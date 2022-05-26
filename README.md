@@ -1,12 +1,12 @@
-# Conflux Developer Website
+# Веб-сайт разработчика Conflux
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern
-static website generator. It supports retrieving docs from any repository and
-deploys to developer.conflux-chain.org.
+Этот веб-сайт создан с использованием [Docusaurus 2](https://v2.docusaurus.io/), современный
+генератор статических сайтов. Он поддерживает извлечение документов из любого репозитория и
+развертывается на сайте developer.conflux-chain.org.
 
-To submit a repository, please read the doc [here](./docs/submit-a-repo.md).
+Чтобы отправить репозиторий, прочитайте документ [тут](./docs/submit-a-repo.md).
 
-### Installation
+### Установка 
 
 ```shell
 $ git clone --recurse-submodules https://github.com/Conflux-Chain/conflux-developer-site
@@ -14,34 +14,34 @@ $ cd conflux-developer-site
 $ yarn
 ```
 
-**Note: the `yarn REINIT` command will run a shell script that clears any
-uncommitted changes under this directory including all submodules in `docs`
-folder. It will set everything to the same state as your `origin/master`.** 
+**Примечание: команда `yarn REINIT` запустит сценарий оболочки, который очищает все
+незафиксированные изменения в этом каталоге, включая все подмодули в `docs`
+папка. Он установит все в то же состояние, что и ваш `origin/master`.** 
 
-### Local Development
+### Локальная разработка
 
 ```
 $ yarn start
 ```
 
-This command starts a local development server and open up a browser window.
-Most changes are reflected live without having to restart the server.
+Эта команда запускает локальный сервер разработки и открывает окно браузера.
+Большинство изменений отражаются в реальном времени без перезапуска сервера.
 
-### Build
+### Сборка
 
 ```
 $ yarn build
 ```
 
-This command generates static content into the `build` directory and can be
-served using any static contents hosting service.
+Эта команда создает статический контент в каталоге `build` и может
+обслуживается с помощью любой службы хостинга статического содержимого.
 
-### Contributing
+### Содействие
 
-Want to contribute to Conflux developer site? Awesome! You can find information about
-contributing to this project in
+Хотите внести свой вклад в сайт разработчиков Conflux? Потрясающе! Вы можете найти информацию о
+участие в этом проекте тут
 [issues](https://github.com/Conflux-Chain/conflux-developer-site/issues)
 
-If you don't know how to make your first contributing, please reference here:
+Если вы не знаете, как внести свой первый вклад, пожалуйста, обратитесь сюда:
 [First Contributions](https://github.com/firstcontributions/first-contributions) 
 
