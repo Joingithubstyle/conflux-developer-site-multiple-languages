@@ -30,7 +30,7 @@ image: https://i.imgur.com/mErPwqL.png
 ---
 ```
 
-Вы можете найти документацию и спецификацию для каждых метаданных здесь. 
+Вы можете найти документацию и спецификацию для каждых метаданных
 [тут](https://v2.docusaurus.io/docs/markdown-features#markdown-headers
 "docusaurus markdown-headers documentation").  
 
