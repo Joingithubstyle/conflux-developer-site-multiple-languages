@@ -1,9 +1,9 @@
 # Как отправить репо 
 
 - добавить метаданные в файл документа уценки
-- create a pr to add your markdown file id to the [sidebars
-  config](../sidebars.js) file and add your repo as git submodule under
-  [docs](./docs) folder   
+- создайте pr, чтобы добавить идентификатор файла уценки в [sidebars
+  config](../sidebars.js)  файл и добавьте свой репозиторий как подмодуль git в
+  [docs](./docs) папку   
 - add a ci config to trigger the build workflow of this repo in your repo's ci
   config 
 
