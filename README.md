@@ -43,5 +43,5 @@ $ yarn build
 [issues](https://github.com/Conflux-Chain/conflux-developer-site/issues)
 
 Если вы не знаете, как внести свой первый вклад, пожалуйста, обратитесь сюда:
-[First Contributions](https://github.com/firstcontributions/first-contributions) 
+[First Contributions]([https://github.com/firstcontributions/first-contributions](https://github.com/firstcontributions/first-contributions/blob/master/translations/README.ru.md)) 
 
