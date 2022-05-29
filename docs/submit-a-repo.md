@@ -31,7 +31,7 @@ image: https://i.imgur.com/mErPwqL.png
 ```
 
 Вы можете найти документацию и спецификацию для каждых метаданных здесь. 
-[here](https://v2.docusaurus.io/docs/markdown-features#markdown-headers
+[тут](https://v2.docusaurus.io/docs/markdown-features#markdown-headers
 "docusaurus markdown-headers documentation").  
 
 Требуется `id`, `title` а также  `custom_edit_url`. 
