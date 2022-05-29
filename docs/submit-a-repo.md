@@ -4,16 +4,13 @@
 - создайте pr, чтобы добавить идентификатор файла уценки в [sidebars
   config](../sidebars.js)  файл и добавьте свой репозиторий как подмодуль git в
   [docs](./docs) папку   
-- add a ci config to trigger the build workflow of this repo in your repo's ci
-  config 
+- добавьте конфигурацию ci, чтобы запустить рабочий процесс сборки этого репо в ci вашего репо конфигурация 
 
-## Add Metadata To Your Markdown File
+## Добавьте метаданные в ваш файл уценки 
 
-You need to add metadata use syntax below at the beginning of your markdown file.
-You only need to add metadata to those files that you want to publish to
-develoepr site.
+Вам нужно добавить синтаксис использования метаданных ниже в начале вашего файла уценки. Вам нужно только добавить метаданные к тем файлам, которые вы хотите опубликовать на сайт разработчика. 
 
-The `custom_edit_url` is the github url for editing text files.
+Этот `custom_edit_url` URL-адрес github для редактирования текстовых файлов.
 `https://github.com/Conflux-Chain/{repo_name}/edit/{branch_name}/{path_to_md}`
 
 ```md
@@ -33,18 +30,18 @@ image: https://i.imgur.com/mErPwqL.png
 ---
 ```
 
-You can find the documentation and spec for each metadata
+Вы можете найти документацию и спецификацию для каждых метаданных здесь. 
 [here](https://v2.docusaurus.io/docs/markdown-features#markdown-headers
 "docusaurus markdown-headers documentation").  
 
-The `id`, `title` and `custom_edit_url` is required.
+Требуется `id`, `title` а также  `custom_edit_url`. 
 
-## Create A PR To Add Your Documentation
+## Создайте PR, чтобы добавить свою документацию 
 
-### Add Your Repo To `docs`
+### Добавьте свой репозиторий в `docs`
 
-Use `git submodule add https://<your-repo-url>.git docs/<your-repo-folder-name>`
-to add your repo under [docs](./docs).
+Используйте `git submodule add https://<your-repo-url>.git docs/<your-repo-folder-name>`
+чтобы добавить свое репо в  [docs](./docs).
 
 ### Add Your Markdown File To `sidebar.js`
 
