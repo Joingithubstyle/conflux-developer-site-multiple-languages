@@ -1,6 +1,6 @@
-# How To Submit A Repo
+# Как отправить репо 
 
-- add metadata to your markdown doc file
+- добавить метаданные в файл документа уценки
 - create a pr to add your markdown file id to the [sidebars
   config](../sidebars.js) file and add your repo as git submodule under
   [docs](./docs) folder   
