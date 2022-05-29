@@ -46,8 +46,8 @@ image: https://i.imgur.com/mErPwqL.png
 ### Добавьте свой файл уценки в `sidebar.js`
 
 Файл `sidebar.js`похож на тот, что ниже. Каждая уценка может быть добавлена ​​как  `{ type:
-"doc", folder: "conflux-portal", id: "quick_start" }`. `id` это идентификатор в метаданные уценки, `folder` папка подмодуля git в [docs](./docs)
-папку, `type` is `doc`. 
+"doc", folder: "conflux-portal", id: "quick_start" }`. `id` это идентификатор в метаданных уценки, `folder` это папка подмодуля git [docs](./docs)
+папки, `type` в  `doc`. 
 
 Вы создаете свою собственную структуру документа с помощью `category`.
 
