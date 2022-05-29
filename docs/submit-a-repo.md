@@ -43,14 +43,13 @@ image: https://i.imgur.com/mErPwqL.png
 Используйте `git submodule add https://<your-repo-url>.git docs/<your-repo-folder-name>`
 чтобы добавить свое репо в  [docs](./docs).
 
-### Add Your Markdown File To `sidebar.js`
+### Добавьте свой файл уценки в `sidebar.js`
 
-A `sidebar.js` is like the below one. Each markdown can be added as `{ type:
-"doc", folder: "conflux-portal", id: "quick_start" }`. `id` is the id in
-markdown metadata, `folder` is the git submodule folder in [docs](./docs)
-folder, `type` is `doc`. 
+Файл `sidebar.js`похож на тот, что ниже. Каждая уценка может быть добавлена ​​как  `{ type:
+"doc", folder: "conflux-portal", id: "quick_start" }`. `id` это идентификатор в метаданные уценки, `folder` папка подмодуля git в [docs](./docs)
+папку, `type` is `doc`. 
 
-You create your own document structure with `category`.
+Вы создаете свою собственную структуру документа с помощью `category`.
 
 ```js
 module.exports = {
@@ -91,15 +90,12 @@ module.exports = {
 };
 ```
 
-## Add A CI Config To Trigger The Build Workflow of This Repo
+## Добавьте конфигурацию CI, чтобы запустить рабочий процесс сборки этого репозитория 
 
-Once your create your PR, we'll check your repo and submit a PR to add the CI
-config. 
+Как только вы создадите свой PR, мы проверим ваш репозиторий и отправим PR, чтобы добавить CI. конфиг. 
 
-## Why It Works
+## Почему это работает 
 
-The CI config in your repo will trigger the build workflow of this repo.
+Конфигурация CI в вашем репозитории запустит рабочий процесс сборки этого репо.
 
-The workflow will pull your repo down, check if any doc files being updated
-between old submodule revision and your **master** branch, use docusaurus build
-the doc and update developer.confluxnetwork.org. 
+Рабочий процесс потянет ваше репо, проверьте, обновляются ли какие-либо файлы документов. между старой версией подмодуля и вашей **основной** веткой используйте сборку docusaurus документ и обновить developer.confluxnetwork.org. 
