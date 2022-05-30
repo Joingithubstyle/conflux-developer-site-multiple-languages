@@ -8,7 +8,7 @@ keywords:
 
 Ниже приведен файл конфигурации узла основной сети, он содержит все поддерживаемые параметры вместе с некоторыми пояснениями в комментариях. Вы также можете найти последнюю версию в [conflux-rust Github repository's run folder](https://github.com/Conflux-Chain/conflux-rust/tree/master/run). Имя файла`hydra.toml` или `testnet.toml`.  Вы также можете найти файл конфигурации журнала [`log.yaml`](https://github.com/Conflux-Chain/conflux-rust/blob/master/run/log.yaml) в той же папке. 
 
-Note: from Conflux-rust v2.0 the mainnet's config file has renamed from `tethys.toml` to `hydra.toml`
+Примечание: начиная с Conflux-rust v2.0 файл конфигурации основной сети был переименован с `tethys.toml` на `hydra.toml`
 
 ```yaml
 # bootnodes is a list of nodes that a conflux node trusts, and will be used to sync the blockchain when a node starts. 
