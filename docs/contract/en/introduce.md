@@ -4,23 +4,23 @@ custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/ma
 keywords:
   - contract introduction
 ---
-# Introduction to Smart Contracts
+# Введение в смарт-контракты 
 
-## What is a Smart Contract?
+## Что такое смарт-контракт? 
 
-The concept of smart contracts was first proposed by Nick Szabo in 1995. A Smart contract is a computer protocol designed to disseminate, verify or execute contracts in an informational manner. Smart contracts allow transactions to be executed without a trusted third party, and the transactions are traceable and irreversible. 
+Концепция смарт-контрактов была впервые предложена Ником Сабо в 1995 году. Смарт-контракт — это компьютерный протокол, предназначенный для распространения, проверки или исполнения контрактов в информационной форме. Смарт-контракты позволяют выполнять транзакции без доверенной третьей стороны, а транзакции отслеживаются и необратимы. 
 
-Its purpose is to provide a secure method that outperforms traditional contracts and reduces other transaction costs associated with contracts. 
+Его цель — предоставить безопасный метод, который превосходит традиционные контракты и снижает другие транзакционные издержки, связанные с контрактами. 
 
-For Conflux network, a "smart contract" is a simple program that runs on the Conflux chain. Each instance of a smart contract is a collection of code and data that resides at a specific address on the Conflux chain. Since the state on the blockchain is fully deterministic, operations on smart contracts are guaranteed to produce the same results on all blockchain nodes. Furthermore, since smart contracts run on the blockchain, the decentralization and non-tamperable characteristics of the blockchain ensure certainty and security in the operation of the contract. Therefore, a wide range of decentralized applications (DApps) are created based on smart contracts, including games, digital collectibles, online voting systems, financial products, etc. 
+Для сети Conflux «умный контракт» — это простая программа, которая работает в цепочке Conflux. Каждый экземпляр смарт-контракта представляет собой набор кода и данных, которые находятся по определенному адресу в цепочке Conflux. Поскольку состояние в блокчейне полностью детерминировано, операции со смарт-контрактами гарантированно приведут к одинаковым результатам на всех узлах блокчейна. Кроме того, поскольку смарт-контракты работают на блокчейне, характеристики децентрализации и защиты от несанкционированного доступа обеспечивают надежность и безопасность работы контракта. Поэтому на основе смарт-контрактов создается широкий спектр децентрализованных приложений (DApps), включая игры, цифровые предметы коллекционирования, системы онлайн-голосования, финансовые продукты и т. д. 
 
-There are two account types on the Conflux chain: user accounts and smart contract accounts. Once the smart contract is deployed, a corresponding smart contract account is created. Smart contract accounts have a CFX balance and they can also interact with other accounts. However, they are not controlled by users but by the program deployed on the network. User accounts are able to interact with smart contracts by submitting transactions that execute the functions defined on the smart contract. The smart contract enables us to define rules just like traditional contracts and automates the execution through codes. 
+В цепочке Conflux есть два типа учетных записей: учетные записи пользователей и учетные записи смарт-контрактов. После развертывания смарт-контракта создается соответствующая учетная запись смарт-контракта. Учетные записи смарт-контрактов имеют баланс CFX, и они также могут взаимодействовать с другими учетными записями. Однако они контролируются не пользователями, а программой, развернутой в сети. Учетные записи пользователей могут взаимодействовать со смарт-контрактами, отправляя транзакции, которые выполняют функции, определенные в смарт-контракте. Смарт-контракт позволяет нам определять правила так же, как и традиционные контракты, и автоматизирует выполнение с помощью кодов. 
 
-Nick Szabo used the example of a vending machine to describe how real-world contractual obligations can be programmed into software and hardware systems. Each person simply puts the correct number of coins into the machine and can expect to receive a product in exchange. Similarly, on Conflux, a smart contract is able to perform a certain task and get a certain result under specified conditions. 
+Nick Szabo использовал пример торгового автомата, чтобы описать, как реальные контрактные обязательства могут быть запрограммированы в программные и аппаратные системы. Каждый человек просто кладет в автомат нужное количество монет и может рассчитывать на получение товара взамен. Точно так же в Conflux смарт-контракт может выполнять определенную задачу и получать определенный результат при определенных условиях. 
 
-## Example
+## Пример
 
-Let's look at one of the simplest smart contract implementations of a vending machine.
+Давайте рассмотрим одну из простейших реализаций смарт-контракта торгового автомата. 
 
 ```js
 pragma solidity ^0.8.0;
@@ -64,58 +64,58 @@ contract VendingMachine {
 }
 ```
 
-This contract has two functions:  method `refill` enables administrators to refill the products;  method `purchase` enables the customers to purchase products using CFX tokens. Just like how vending machines eliminate the need for salesmen, smart contracts can eliminate intermediaries in many industries. 
+Этот контракт имеет две функции: метод  `refill` позволяет администраторам пополнять продукты; метод `purchase` позволяет клиентам приобретать продукты с использованием токенов CFX. Точно так же, как торговые автоматы устраняют потребность в продавцах, смарт-контракты могут устранить посредников во многих отраслях. 
 
-The smart contract is a set of code (contract function) and data (contract state variables). For the line `mapping (address => uint) public cupcakeBalances;` , it declares a state variable named cupcakeBalances with type `mapping (address => uint)`. You can see it as a table in the database. Meanwhile, the contract methods `refill` and  `purchase` are used to read or modify the state of the data in that database table. 
+Смарт-контракт представляет собой набор кода  (contract function) и данных (contract state variables). Для линии `mapping (address => uint) public cupcakeBalances;` , он объявляет переменную состояния с именем cupcakeBalances и типом  `mapping (address => uint)`.  Вы можете увидеть это как таблицу в базе данных. При этом договорные методы  `refill` а также   `purchase`используются для чтения или изменения состояния данных в этой таблице базы данных. 
 
-This contract is written in `solidity`, whose syntax is similar to  `javascript`. 
--  `pragma solidity ^0.8.0;` indicates that this contract needs to be compiled with a `>=0.8.0<0.9.0` compiler.
--  contract `VendingMachine` assigns the contract name as `VendingMachine` ;
--  `address public owner;` defines a public state variable with the name `owner` and type `address`; 
--  `event Purchase(address customer, uint amount);` defines the `event` with the name `Purchase`. `event` is similar to the logging function in other languages. Its role is mainly to record some important information when the contract is executed. For example, `Purchase` is an event that generates a purchase record when a customer purchases an item.
--  The `constructor` unction is executed exactly once when the contract is deployed; 
-- The `balanceOf` function (marked as `view`) is a read-only function that can't be used to modify the contract state;
-- `refill` function is an ordinary function, can be called by sending a transaction. This function will change the contract state; 
- - `require(msg.sender == owner,..);` indicates that only when the condition `msg.sender == owner` is fulfilled (that is, the caller is the administrator), the state of contract variable `cupcakeBalances` can be modified to refill the products; 
--  `purchase` function includes `payable`, indicating that you can send CFX at the same time when the function is called. Since customers need to pay CFX to purchase, it is marked as `payable`.
- - `require(msg.value >= amount * 1 ether,..)` indicates the full amount of CFX must be paid in order to complete the purchase. 
- - The number of products in the vending machines decreases after a successful purchase and the number of goods owned by the customers (indicated by `cupcakeBalances[msg.sender]`) increases. 
+Этот контракт написан на `solidity`, синтаксис которого похож на  `javascript`. 
+-  `pragma solidity ^0.8.0;` указывает, что этот контракт должен быть составлен с `>=0.8.0<0.9.0` компилятором. 
+-  контракт `VendingMachine` присваивает имя контракта как  `VendingMachine` ;
+-  `address public owner;` определяет общедоступную переменную состояния с именем `owner`и прописываем `address`; 
+-  `event Purchase(address customer, uint amount);` определяет  `event` с именем `Purchase`. `event` аналогична функции регистрации в других языках. Его роль в основном заключается в записи важной информации при выполнении контракта. Например,  `Purchase` это событие, которое создает запись о покупке, когда покупатель покупает товар. 
+-  Это `constructor` действие выполняется ровно один раз при развертывании контракта; 
+- Это `balanceOf` функция (отмечена как `view`) — это функция только для чтения, которую нельзя использовать для изменения состояния контракта; 
+- `refill` function — это обычная функция, которую можно вызвать, отправив транзакцию. Эта функция изменит состояние контракта; 
+ - `require(msg.sender == owner,..);` указывает, что только при условии `msg.sender == owner` выполняется (т. е. вызывающая сторона является администратором), состояние переменной контракта`cupcakeBalances` можно модифицировать для пополнения продуктов; 
+-  `purchase` функция включает `payable`, указывающее, что вы можете отправлять CFX одновременно с вызовом функции. Поскольку клиентам необходимо заплатить CFX за покупку, он помечен как  `payable`.
+ - `require(msg.value >= amount * 1 ether,..)` указывает, что для завершения покупки необходимо заплатить полную сумму CFX. 
+ - Количество продуктов в торговых автоматах уменьшается после успешной покупки и количество товаров, принадлежащих покупателям (обозначено `cupcakeBalances[msg.sender]`) увеличивается. 
 
-After writing the contract, you need to first compile the contract and then deploy it to the Conflux chain by sending a [transaction](https://developer.confluxnetwork.org/introduction/en/conflux_basics#transactions).  Then, you can interact with the contract by calling it. 
+После написания контракта вам нужно сначала скомпилировать контракт, а затем развернуть его в цепочке Conflux, отправив  [transaction](https://developer.confluxnetwork.org/introduction/en/conflux_basics#transactions).  Затем вы можете взаимодействовать с контрактом, вызвав его. 
 
-Once the contract is deployed, anyone can call it. However, the state of the contract will be changed only when a certain condition is satisfied. 
+Как только контракт развернут, любой может вызвать его. Однако состояние контракта будет изменено только при выполнении определенного условия. 
 
-For further instructions on the Solidity language, please refer to [the official Solidity Documentation](https://docs.soliditylang.org/en/v0.8.4/)
+Дополнительные инструкции по языку Solidity смотрим на [the official Solidity Documentation](https://docs.soliditylang.org/en/v0.8.4/)
 
-Next, we will introduce the process of compilation, deployment, invocation, and contract execution. 
+Далее мы представим процесс компиляции, развертывания, вызова и выполнения контракта. 
 
-### Compilation
+### Компиляция 
 
-Contract compilation is the process of generating the elements required when deploying the contract from the contract code through the compiler. There are two main parts in the compilation result, `abi` and `bytecode`. 
+Компиляция контракта — это процесс создания элементов, необходимых при развертывании контракта, из кода контракта с помощью компилятора. Результат компиляции состоит из двух основных частей:  `abi` так же `bytecode`. 
 
-- Bytecode: smart contracts are executed on the Ethereum Virtual Machine (EVM). The bytecode is the hexadecimal value corresponding to the contract that the EVM can recognize. 
+- Байт-код: смарт-контракты выполняются на виртуальной машине Ethereum (EVM). Байт-код — это шестнадцатеричное значение, соответствующее контракту, который может распознать EVM. 
 
-- ABI: ABI refers to Application Binary Interface, which describes function name, modifier, visibility, parameter name, and its type, returns value name and its type, and description of events in the public interface of contract (in JSON format). When we call the contract function externally and encode it in a certain way based on the description of the function in the ABI, we can get a value that the EVM can recognize and display in hexadecimal format. You can use this value to interact with the contract. 
+- ABI: ABI относится к бинарному интерфейсу приложения, который описывает имя функции, модификатор, видимость, имя параметра и его тип, возвращает имя значения и его тип, а также описание событий в открытом интерфейсе контракта (в формате JSON). Когда мы вызываем функцию контракта извне и кодируем ее определенным образом на основе описания функции в ABI, мы можем получить значение, которое EVM сможет распознать и отобразить в шестнадцатеричном формате. Это значение можно использовать для взаимодействия с контрактом. 
 
-You can use `solc`, [conflux-truffle](https://github.com/Conflux-Chain/conflux-truffle) to compile the smart contract. 
+Вы можете использовать  `solc`, [conflux-truffle](https://github.com/Conflux-Chain/conflux-truffle) для компиляции смарт-контракта. 
 
-Here, we take solc as an example
+Здесь мы берем solc в качестве примера 
 
-Install solc
+Установить  solc
 
 ```sh
 npm install -g solc
 ```
 
-> Attention: The compiler version needs to match the version specified in the contract, to download the v0.6.12 version, use `npm install -g solc@v0.6.12`
+> Внимание: Версия компилятора должна совпадать с версией указанной в договоре, для скачивания версии v0.6.12 используйте `npm install -g solc@v0.6.12`
 
-Compilation
+Компиляция
 
 ```
 solcjs ./VendingMachine.sol --bin --abi
 ```
 
-Generating `bytecode` file  `__...VendingMachine.bin` and `abi` file `__...VendingMachine.abi`
+Генерация  `bytecode` файла  `__...VendingMachine.bin` and `abi` file `__...VendingMachine.abi`
 
 `__...VendingMachine.bin`
 ```
@@ -154,12 +154,12 @@ Generating `bytecode` file  `__...VendingMachine.bin` and `abi` file `__...Vendi
 ```
 
 
-### Deploy
-The contract deployment is creating a contract instance on the Conflux blockchain by sending a [transaction](https://developer.confluxnetwork.org/introduction/en/conflux_basics#transactions) with `data` as `bytecode` and `to` left empty.
+### Развертывание
+Развертывание контракта — это создание экземпляра контракта в блокчейне Conflux путем отправки [transaction](https://developer.confluxnetwork.org/introduction/en/conflux_basics#transactions) с `data` в качестве  `bytecode` а так же  `to` оставляя пустым. 
 
-> If the constructor contains parameters, `data` should be a combination of `bytecode` and the ABI encoding of the `constructor`.
+> Если конструктор содержит параметры, `data`должно быть сочетание `bytecode` и кодировки ABI `constructor`.
 
-We will use `js-conflux-sdk` to demonstrate.
+Мы будем использовать `js-conflux-sdk` для демонстрации. 
 
 ```js
 const { Conflux } = require("js-conflux-sdk");
@@ -185,7 +185,7 @@ const { Conflux } = require("js-conflux-sdk");
 
 ```
 
-As shown in the example above, the contract is deployed after sending a [transaction](https://developer.confluxnetwork.org/introduction/en/conflux_basics#transactions) with data as bytecode. The `contractCreated` field of the `transaction receipt` is the contract address after deployment. 
+Как показано в приведенном выше примере, контракт развертывается после отправки [transaction](https://developer.confluxnetwork.org/introduction/en/conflux_basics#transactions) с данными в виде байт-кода. Это `contractCreated` поле с `transaction receipt` и адрес контракта после развертывания. 
 
 ```js
 deploy tx receipt: {
@@ -210,19 +210,19 @@ deploy tx receipt: {
 }
 ```
 
-The example directly sending [transaction](https://developer.confluxnetwork.org/introduction/en/conflux_basics#transactions) for demostration purpose. If the contract constructor contains parameters, a better way is to use contract development tools like [`js-conflux-sdk` `contract`](https://github.com/Conflux-Chain/js-conflux-sdk/blob/master/docs/interact_with_contract.md) and [`conflux-truffle`](https://github.com/Conflux-Chain/conflux-truffle) to deploy.
+Пример прямой отправки [transaction](https://developer.confluxnetwork.org/introduction/en/conflux_basics#transactions) для демонстрации. Если конструктор контракта содержит параметры, лучше использовать инструменты разработки контрактов, такие как [`js-conflux-sdk` `contract`](https://github.com/Conflux-Chain/js-conflux-sdk/blob/master/docs/interact_with_contract.md) а так же [`conflux-truffle`](https://github.com/Conflux-Chain/conflux-truffle) развертывания. 
 
-### Calling smart contracts
+### Вызов смарт-контрактов 
 
-After the contract is deployed, you can interact with the contract. There are two ways: 
+После развертывания контракта вы можете взаимодействовать с контрактом. Есть два способа: 
 
-- Calling through the RPC `cfx_call`: this type of contract calling is only executed in the EVM but does not actually change the state. This is usually used to call read-only contract functions or to simulate the execution of a transaction to see if it can be executed successfully. 
+- Звонок через RPC  `cfx_call`: этот тип вызова контракта выполняется только в EVM, но фактически не меняет состояние. Обычно это используется для вызова функций контракта только для чтения или для имитации выполнения транзакции, чтобы увидеть, может ли она быть выполнена успешно. 
 
-- Sending [transaction](https://developer.confluxnetwork.org/introduction/en/conflux_basics#transactions): this type of contract call will change the contract state when executed. 
+- Отправка  [transaction](https://developer.confluxnetwork.org/introduction/en/conflux_basics#transactions): этот тип вызова контракта изменит состояние контракта при выполнении. 
 
-The data used when calling the contract is generated by [ABI encoding](https://docs.soliditylang.org/en/develop/abi-spec.html) based on the function information described by the ABI. The first 4 bytes are the function selector (the first 4 bytes of the Keccak (SHA-3) hash of the function signature), and the fifth byte starts with the ABI-encoded parameter.
+Данные, используемые при вызове контракта, генерируются  [ABI encoding](https://docs.soliditylang.org/en/develop/abi-spec.html) а основе функциональной информации, описанной ABI. Первые 4 байта — это селектор функции (первые 4 байта хэша Keccak (SHA-3) сигнатуры функции), а пятый байт начинается с параметра, закодированного в ABI. 
 
-We will use js-conflux-sdk to demonstrate.
+Мы будем использовать js-conflux-sdk для демонстрации. 
 
 ```js
 const { Conflux } = require("js-conflux-sdk");
@@ -246,7 +246,7 @@ const { Conflux } = require("js-conflux-sdk");
     console.log("after purchase, my cupcake balance :", myBalance)
 })()
 ```
-From the log, we can see that the corresponding RPC information of `contract.cupcakeBalances(me.address)` is as follows.
+Из журнала мы видим, что соответствующая информация RPC `contract.cupcakeBalances(me.address)` состоит из следущего.
 
 ```js
 {
@@ -266,11 +266,11 @@ From the log, we can see that the corresponding RPC information of `contract.cup
   duration: 33
 }
 ```
-rpc method is `cfx_call`, data is the result of `function selector + ABI-encoded result of parameter list`. The first 4 bytes `0xe18a7b92` is the function selector of function `balanceOf`. The calculation takes keccak operation `keccak256("balanceOf(address)")` on the signature `balanceOf(address)` of `balanceOf` and then takes the first 4 bytes.  `00000000000000000000000019f4bcf113e0b896d9b34294fd3da86b4adf0302`is the ABI-encoded value of paramter `0x19f4bcf113e0b896d9b34294fd3da86b4adf0302`
+метод rpc `cfx_call`, данные являются результатом  `function selector + ABI-encoded result of parameter list`. Первые 4 байта  `0xe18a7b92` это функция селектор функций `balanceOf`.  Вычисление принимает операцию keccak `keccak256("balanceOf(address)")` в попдиси  `balanceOf(address)` из `balanceOf` а затем берет первые 4 байта.  `00000000000000000000000019f4bcf113e0b896d9b34294fd3da86b4adf0302`ABI-кодированное значение параметра `0x19f4bcf113e0b896d9b34294fd3da86b4adf0302`
 
-The returned value is `0x0000000000000000000000000000000000000000000000000000000000000000`, which is the result of ABI-encoded value 0 with `uint`type
+Возвращаемое значение `0x0000000000000000000000000000000000000000000000000000000000000000`, что является результатом ABI-кодированного значения `uint`этого типа.
 
-The RPC method for `purchase` is `cfx_sendRawTransaction`, which is sending [transaction](https://developer.confluxnetwork.org/introduction/en/conflux_basics#transactions). This will change the state of the contract. The encoding method for the transaction's data is also `function selector + ABI-encoded result of parameter list`. You can check this through getTransactionByHash 
+Метод RPC для  `purchase` является `cfx_sendRawTransaction`,который отправляет [transaction](https://developer.confluxnetwork.org/introduction/en/conflux_basics#transactions). Это изменит состояние контракта. Метод кодирования данных транзакции также `function selector + ABI-encoded result of parameter list`.Вы можете проверить это через  getTransactionByHash 
 
 ```json
 {
@@ -286,7 +286,7 @@ The RPC method for `purchase` is `cfx_sendRawTransaction`, which is sending [tra
 }
 ```
 
-We can see a record from the `logs` field of `transaction receipt`. `logs` indicate the event that happened in the transaction. 
+Мы видим запись из  `logs` поле`transaction receipt`. `logs` указать событие, которое произошло в транзакции
 
 ```js
 purchase receipt {
@@ -305,7 +305,7 @@ purchase receipt {
 }
 ```
 
-The event analysis result is
+Результат анализа событий 
 
 ```js
 purchase event: {
@@ -320,9 +320,9 @@ purchase event: {
   }
 }
 ```
-This indicates that one `Purchase` event happened, customer is  `cfxtest:aap9kthvctunvf030rbkk9k7zbzyz12dajp1u3sp4g`, quantity is 2. 
+Это указывает на то, что один `Purchase`событие произошло, клиент  `cfxtest:aap9kthvctunvf030rbkk9k7zbzyz12dajp1u3sp4g`, количество 2. 
 
-After `purchase` is complete,  `cupcakeBalances[0x19f4bcf113e0b896d9b34294fd3da86b4adf0302]` changed from 0 to 2. State has changed. 
+После  `purchase` завершено,  `cupcakeBalances[0x19f4bcf113e0b896d9b34294fd3da86b4adf0302]` изменился с 0 на 2. Состояние изменилось. 
 ```js
 {
   data: {
@@ -336,18 +336,18 @@ After `purchase` is complete,  `cupcakeBalances[0x19f4bcf113e0b896d9b34294fd3da8
 }
 ```
 
-> Attention: When deploying or calling contracts on the Conflux chain, if new storage space is occupied in the contract, some CFX will be collateralized for the occupied space; this will be refunded after the storage is released. For more information, please visit [storage collateral mechanism of Conflux](https://juejin.cn/post/6855551378123653127). 
+> Внимание: при развертывании или вызове контрактов в цепочке Conflux, если в контракте занято новое место для хранения, некоторые CFX будут обеспечены за занятое пространство; эта сумма будет возвращена после освобождения хранилища. Для получения дополнительной информации посетите [storage collateral mechanism of Conflux](https://juejin.cn/post/6855551378123653127). 
 
 
-## Additional resources
+## Дополнительные ресурсы 
 
-In addition to solidity, you can also use vyper for smart contract development. 
+Помимо solidity, вы также можете использовать vyper для разработки смарт-контрактов.
 - [Solidity](https://docs.soliditylang.org/en/v0.8.4/)
 - [Vyper](https://vyper.readthedocs.io/en/stable/)
 
-Conflux also has more friendly and efficient smart development tools for developers. 
+Conflux также предлагает более удобные и эффективные интеллектуальные инструменты разработки для разработчиков. 
 - [Conflux-Truffle](https://github.com/Conflux-Chain/conflux-truffle)
 
-Others
+Другие 
 - [Introduction of Conflux basic concepts](https://developer.conflux-chain.org/introduction/en/conflux_basics)
 - [Ethereum's introduction of smart contract](https://ethereum.org/zh/developers/docs/smart-contracts/)
