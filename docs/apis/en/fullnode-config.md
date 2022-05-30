@@ -6,7 +6,7 @@ keywords:
   - config
 ---
 
-Below is a mainnet node configuration file, it contains all the supported options along with some explanations in the comments. You can also find the latest version at [conflux-rust Github repository's run folder](https://github.com/Conflux-Chain/conflux-rust/tree/master/run). The file name is `hydra.toml` or `testnet.toml`. You can also find the log config file [`log.yaml`](https://github.com/Conflux-Chain/conflux-rust/blob/master/run/log.yaml) in the same folder.
+Ниже приведен файл конфигурации узла основной сети, он содержит все поддерживаемые параметры вместе с некоторыми пояснениями в комментариях. Вы также можете найти последнюю версию в [conflux-rust Github repository's run folder](https://github.com/Conflux-Chain/conflux-rust/tree/master/run). Имя файла`hydra.toml` или `testnet.toml`.  Вы также можете найти файл конфигурации журнала [`log.yaml`](https://github.com/Conflux-Chain/conflux-rust/blob/master/run/log.yaml) в той же папке. 
 
 Note: from Conflux-rust v2.0 the mainnet's config file has renamed from `tethys.toml` to `hydra.toml`
 
