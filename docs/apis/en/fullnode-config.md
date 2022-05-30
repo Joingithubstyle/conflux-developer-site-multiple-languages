@@ -1,6 +1,6 @@
 ---
 id: node_config_example
-title: Fullnode Config File
+title: Файл конфигурации полного узла 
 custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/apis/en/papers.md
 keywords:
   - config
