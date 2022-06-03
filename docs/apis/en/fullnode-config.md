@@ -11,151 +11,151 @@ keywords:
 Примечание: начиная с Conflux-rust v2.0 файл конфигурации основной сети был переименован с `tethys.toml` на `hydra.toml`
 
 ```yaml
-# bootnodes is a list of nodes that a conflux node trusts, and will be used to sync the blockchain when a node starts. 
-# The value is a string divided by comma without space, and every entry is a node
-# A node is identified by cfxnode://NODEID@PUBLICIP:PORT
-# By default, no bootnodes are provided. What's provided here is a list of nodes that Conflux Team maintains across the world.
+# bootnodes — это список узлов, которым доверяет узел conflux, и который будет использоваться для синхронизации блокчейна при запуске узла. 
+# Значение представляет собой строку, разделенную запятой без пробела, и каждая запись является узлом 
+# Узел идентифицируется как cfxnode://NODEID@PUBLICIP:PORT
+# По умолчанию загрузочные узлы не предоставляются.  Здесь представлен список узлов, которые команда Conflux поддерживает по всему миру. 
 
 bootnodes="cfxnode://dc79bc70833e797ba41eff5bda67c0484abca4918ef38289b5f96acd3daa890eadc85d46fc71f250a8ac51b0c4ab70b3812b1ed3c8f10a9e996b6663be34f1f1@47.88.79.174:32323,cfxnode://25265e1aa470d9d8667947820c4830a64e9f9678d6cb23ecde91e0447527f4926257b9637923a305ce91e15c929ed28164e6c32b76213764eb4a9624120ae1d7@39.97.180.246:32323,cfxnode://2b72adc3f52a80945db10fa35c3f6d02c73f65ff98b4a9eae4f7b244e8a51f01690e7dcef7a30bfb67fb07fcb2949e67c27487169623d40f6a9e55a8d04ca34f@39.107.143.220:32323,cfxnode://5da942ac58e392e9f68784876a1800ffe5756f8498aa1a7a9a869fe9370c2e838a114dfce33fff9674633700a0094aed8b46722fb6b03619842602a2473223de@39.97.170.199:32323,cfxnode://28d3cdf07b7deb41bb52dee0a952fc599f46f6b89cc513ecfd1020d5a66e73e7cfe68543e64962aefbcae7123a6c390a43144f5900f0bc181c3c89ffdf9ff81b@39.97.225.254:32323,cfxnode://f94343e4c806b2968c5e4bf4cbc49736d04af03fab4b797bc11aea2af2cb23d706d1d9c5dfae430a2df1d7fe6a6a988aff43c50898dc087161e51fa69d603997@13.69.186.42:32323,cfxnode://012d0f7e59f62220e2a90e458cf0d65e5690d09dad59ce05f03f5878a7142bef9f412decdbefa7716e8331e94d68f05c2ce943db4ffa5440e496f2130d3feb50@23.96.108.96:32323,cfxnode://7e2e4918d3aff819afdb8782c13544ea63193d82d9529dfbab3efb101754b322fc161c771a784e1b0420da8f78dbb127fbac24d1d626b634b462542ad8953bd7@52.231.28.50:32323,cfxnode://8949669b26e015acd6c3e1ba5f87e2a7242a8611eec224428d5553005e45b4c6b2e352721be6334a445340441c8d6f8dfeab20472fbb0ce9733c293f0c1c781c@13.67.73.51:32323,cfxnode://49ff58db6b4c5f92c2145e69ea0625134cbe35885f0e5979191ba9c67e4c9374234ed7fbeb65f82d4d197568110a4f100f078bfbac896f391b362bec77be19ea@212.64.63.38:32323,cfxnode://97497107e94ac463f6bad526d74e0058d46154e97cbf758edaf3d360e2f3347ae5946ca337eb0d201df8f625e7ae5bfc32e8394d2ce37bd2dc35fa5a4bcecd01@8.131.69.64:32323,cfxnode://c22ad0736f5cc2cc3b11ce5f43345213c2e44994dfaa5e3b0cebe8bd9c78cc52e1a22949ff5953aea80476f648e42b502172e04629c172f4400a0af4caf97efb@8.131.68.192:32323,cfxnode://04cee414977f68a0c2f0215199dde4ec1c27350e447ea855ce000054336f4ccb1c43f0c5ebe8172ad51c7d7b88ac98c037a85ae949e79734449ac38a23fd1d60@212.64.62.252:32323,cfxnode://f1750b818c5828fc5f22667f4b45d4a39b17a1cf40f71ae8f74b6195485a93bf16892a3785bda36132ebae64b83b91b216eaccb7a02185a01f37c7ad89c513ad@101.132.133.254:32323,cfxnode://72a21ec3d2d7c5545b4a46656eaca6ab4ec3ac85628f665bd205e7c52273d345d1583efface277b967fca963a81fbf8b7a81ae97f0a46234cd5fb34853c95fd2@47.101.39.91:32323,cfxnode://b7aeba1f1b2b3e5dfdc7ac93df4281a440ccbdc89894444e094f15242ffa1578d90f9fd447b899be89a57542616e26a82180bd2bfb3b81f82a4dffdfe180f44e@8.210.110.149:32323,cfxnode://07faaf8be8bff4243b496363fb02bd0a21be97e291febcd9aabb29996de90d0a10065f3383beff09f05cb0bdfaa9655d90550c8abcbf97be0658ce6efd8f9b64@47.254.67.249:32323,cfxnode://b77e95cb41cae81dd82a29a07b776549ff37d93954b46214aa32036280c412cefee57350f3e1a4e9db21785ee5a4370961a55a856f7fcb664e511f2fb17f7881@35.171.101.208:32323,cfxnode://0f69308d246238e5a5a91769ab1757962e787bbdbf2c478a60cb6aed1cee8c57045d0402cdea5ee0227a884e92d72ede7742c6a3ac6f2eeb283e68ceb9503a7f@52.52.5.142:32323,cfxnode://deb45647edf5b918f813dfc5e678570026e8a25ecc48a72f45d09f8d7b579af51d783c8e639a40304c07776f162b012603c2b14577ad77ccffdac273e16cb7d1@54.71.187.184:32323,cfxnode://cac5aed8c474dab7815d53a8c16434893d750455341252590e09353608106a6bc47c5e78409a47f740ca2c88be83140a660d20ceb665e8e6dd8d5ce57851a891@54.94.4.66:32323,cfxnode://e5189aed19303ee171be0a8cc206324fd7a5fe4a2a52a02aba5d869a01ba6a7865e6aeeab32db97b9bbd216e7b7ebc72bb1aed53df659cf13142a65c13cd3dd9@15.184.179.185:32323,cfxnode://70dba74973f9deac76fb6e3987c07f434d8d162cb3f5ae9db4aa717caf02c6f5c5fefac4e21b01635a697127ef9333465eeb5e2f3a539ffbcba786875c075433@18.132.169.41:32323,cfxnode://be27a2f6f4b06919ecc76fa1263b5beb067a1011746371747786ec1c75e1186254f26d7209ac3b7185109db208fcb098032f1d616cb93227bec750226f246f45@13.51.0.234:32323,cfxnode://838ee636dd6ebd18cbc50eb1448dc41b54fb9e7c2de679f2b119ef52df60fa23797d9cba41111c1431693b29aba9a3351c8ae29d3691ddb8261d677d7e1b7cd8@18.158.251.2:32323,cfxnode://b69865a15548528c3734f581294a022dc8f3c8a14e2d1fe82f5cbce63906316c5af321990c984c9ebe2c990b77d7991d389645d278e31e86c64a32b1f41f3a9a@18.136.130.20:32323,cfxnode://e7f13b08d8bd80cf62dff22bd57d423bade2aa8a87c7c5ad7332ccd57d7c642956a3dae898a9d56c3542200de1b696689f1105132196916cd5c82cf3e5a5c2a0@3.114.73.12:32323,cfxnode://4c19a0e862b6884cd0f9a85612f9778b7aee42103752a1e3beb67d450aac94645b72a8cb452bb6d997b78f83243c2df769d528bdec547ae512f916a8a5fac5d1@35.72.61.150:32323,cfxnode://c65a039e657bfe5ec6005feca4450a705f43cd36656ae45033d68425edc8c002983a9ec941e6eb2529580888fa7348934ccc9a5396c2fe3d0d5036ed4e806efd@3.37.149.79:32323,cfxnode://6d6d9c474f792bcb7fa68ec04e81831e9cb18407a3b3b37b9140e32f94403b820193920a281c97875717c01c3827429ee3eefef30dc0c65b1436228d065e8179@18.163.95.162:32323"
 
-# Set the node type to Full node, Archive node, or Light node.
-# Possible values are "full", "archive", or "light".
-# The command line parameter `--full`, `--archive`, or `--light` will overwrite this parameter.
+# Установите тип узла на Полный узел, Архивный узел или Легкий узел. 
+# Возможные значения: "full", "archive", or "light".
+# Параметр командной строки `--full`, `--archive`, or `--light` перезапишет этот параметр. 
 #
 # node_type = "full"
 
-# Some preset develepment configurations.
-# It should not be set in production environment.
+# Некоторые предустановленные конфигурации разработки. 
+# Это не должно быть установлено в производственной среде. 
 #
-# For both `test` and `dev` modes, we will
-#     * Set initial difficulty to 4
+# Для обоих режимов `test` и `dev` мы будем 
+#     * Установите начальную сложность на 4 
 #
-# `test` mode is for Conflux testing and debugging, we will
-#     * Add latency to peer connections
-#     * Skip handshake encryption check
-#     * Skip header timestamp verification
-#     * Handle NewBlockHash even in catch-up mode
-#     * Allow data propagation test
-#     * Allow setting genesis accounts and generate tx from secrets
+# режим `test` предназначен для тестирования и отладки Conflux, далее мы должны 
+#     * Добавить задержку для одноранговых соединений 
+#     * Пропустить проверку шифрования handshake  
+#     * Пропустить проверку timestamp header  
+#     * Обработать NewBlockHash даже в режиме catch-up 
+#     * Разрешить проверку распространения данных 
+#     * Разрешить настройку учетных записей genesis и сгенерировать tx из secrets  
 #
-# `dev` mode is for users to run a single node that automatically
-#     generates blocks with fixed intervals
-#     * You are expected to also set `jsonrpc_ws_port`, `jsonrpc_tcp_port`,
-#       and `jsonrpc_http_port` if you want RPC functionalities.
-#     * generate blocks without PoW (either after receiving a transaction or
-#       in fixed period, see ``dev_block_interval_ms'')
-#     * Skip catch-up mode even there is no peer
+# Режим `dev` позволяет пользователям запускать один узел, который автоматически 
+#     генерирует блоки с фиксированными интервалами 
+#     * Ожидается, что вы также установите `jsonrpc_ws_port`, `jsonrpc_tcp_port`, 
+#       и `jsonrpc_http_port`, если вам нужны функции RPC. 
+#     * генерировать блоки без PoW (либо после получения транзакции, либо 
+#       в фиксированный период, см. ``dev_block_interval_ms'') 
+#     * Пропустить режим catch-up, даже если нет peer 
 #
-# mode = ""
+# режим = ""
 
-# If you want to setup a single node running Conflux for development. You should
-# COMMENT the bootnodes setting and you should use the following parameters:
+# Если вы хотите настроить один узел, на котором работает Conflux, для разработки.  Вам следует 
+# ЗАКОММЕНТИРОВАТЬ настройку загрузочных узлов, и вы должны использовать следующие параметры: 
 #
-# mode = "dev"
+# режим  = "dev"
 
-# ``dev_block_interval_ms'' controls the mining rate in the dev mode.
+# ``dev_block_interval_ms''  управляет скоростью майнинга в режиме разработки. 
 #
-# If it's not set, blocks will only be generated after receiving a transaction.
-# Otherwise, blocks are automatically generated every ``dev_block_interval_ms'' ms.
+# Если он не установлен, блоки будут генерироваться только после получения транзакции. 
+# В противном случае блоки автоматически генерируются каждые``dev_block_interval_ms'' ms.
 #
 # dev_block_interval_ms = 250
 
-# ----------------- Mining Configuration -----------------
+# ----------------- Конфигурация майнинга -----------------
 
-# `mining_author` is the address to receive mining rewards.
-# If set, `mining_type` will be "stratum" by default.
-# The value is a 40-digit hex string or a valid CIP-37 base32 address.
-# By default, the value is not set.
+# `mining_author` — это адрес для получения вознаграждения за майнинг.
+# Если установлено, `mining_type` по умолчанию будет "stratum". 
+# Значение представляет собой 40-значную шестнадцатеричную строку (hex) или действительный адрес CIP-37 base32. 
+# По умолчанию значение не задано. 
 #
 # mining_author="cfx:aarc9abycue0hhzgyrr53m6cxedgccrmmyybjgh4xg"
 
-# `mining_type` controls whether the mining process goes through the
-# stratum protocol, uses CPU-mining, or disable mining.
-# Possible values are "stratum", "cpu", and "disable".
-# The default value is "stratum" if `mining_author` is set.
-# If the value is set and not "disable", `mining_author` must be set.
+# `mining_type` контролирует, проходит ли процесс майнинга через 
+# протокол stratum, использует CPU-майнинг или отключает майнинг.
+# Возможные значения: "stratum", "cpu" и "disable". 
+# Значение по умолчанию "stratum", если установлен `mining_author`. 
+# Если значение установлено, а не "disable", `mining_author`должен быть установлен.
 #
 # mining_type = "stratum"
 
-# Listen address for stratum
+# Адрес прослушивания для stratum 
 #
 # stratum_listen_address = "127.0.0.1"
 
-# Port for stratum.
+# Порт для stratum. 
 #
 # stratum_port = 32525
 
-# Window size for PoW manager
+# Размер окна для менеджера PoW 
 #
 # pow_problem_window_size = 1
 
-# Secret key for stratum.
-# The value is 64-digit hex string.
-# If not set, the RPC subscription will not check the authorization.
+# Секретный ключ для stratum. 
+# Значение представляет собой 64-значную шестнадцатеричную (hex) строку.
+# Если не установлено, подписка RPC не будет проверять авторизацию. 
 #
 # stratum_secret = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 
-# -------------- Log-related Configuration -------------
+# -------------- Конфигурация, связанная с журналом (Log-related) -------------
 
-# `log_conf` the path of the log4rs configuration file. The configuration in the file will overwrite the value set by `log_level`.
-# By default, the value is not set.
+# `log_conf` путь к файлу конфигурации log4rs. Конфигурация в файле перезапишет значение, установленное `log_level`.
+# По умолчанию значение не задано. 
 #
 log_conf="log.yaml"
 
-# `log_file` is the path of the log file"
-# If not set, the log will only be printed to stdout, and not persisted to files.
-# By default, the value is not set.
+# `log_file`- это путь к файлу журнала" 
+# Если не задано, журнал будет выводиться только на стандартный вывод, а не сохраняться в файлах. 
+#  По умолчанию значение не задано. 
 #
 # log_file="conflux.log"
 
-# `log_level` is the printed log level.
-# The value should be one of "error", "warn", "info", "debug", "trace", "off"
+# `log_level`  уровень вывода лога. 
+# Значение должно быть одним из следующих:  "error", "warn", "info", "debug", "trace", "off"
 #
 # log_level="info"
 
-# -------------- Network Configuration -------------
+# -------------- Конфигурация сети -------------
 
-# `public_address` is the address of this node used for other nodes to connect to.
-# If not set, the process will try to find out the public IP with best effort, and use `tcp_port` as public port.
-# However, it's HIGHLY RECOMMENDED to set the value manually, especially for machines with IP translated by NAT.
+# `public_address` - это адрес этого узла, используемый для подключения других узлов. 
+# Если не установлено, процесс попытается выяснить общедоступный IP-адрес с максимальной эффективностью и использовать `tcp_port` в качестве общедоступного порта.
+# Тем не менее, НАСТОЯТЕЛЬНО РЕКОМЕНДУЕТСЯ устанавливать значение вручную, особенно для машин с IP, транслируемым NAT. 
 #
 # public_address="1.1.1.1"
 
-# `tcp_port` is the TCP port that the process listens for P2P messages. The default is 32323.
+# `tcp_port` это TCP-порт, на котором процесс прослушивает P2P-сообщения.  По умолчанию 32323. 
 #
 # tcp_port=32323
 
-# `public_tcp_port` is the public TCP port that other nodes should connect to. It might be different from
-# the tcp_port in case the machine is behind a NAT. The default is as same as `tcp_port`.
+# `public_tcp_port` общедоступный TCP-порт, к которому должны подключаться другие узлы.  Он может отличаться от 
+#  tcp_port если машина находится за NAT.  Значение по умолчанию такое же, как `tcp_port`.
 #
 # public_tcp_port=32323
 
-# `udp_port` is the UDP port used for node discovery.
-# If not set, it will be the same as `port`.
+# `udp_port` - это порт UDP, используемый для обнаружения узла. 
+# Если не задано, будет то же самое, что и `port`. 
 #
 # udp_port=32323
 
-# `jsonrpc_http_threads` is used to control how many threads to process HTTP rpc requests.
+# `jsonrpc_http_threads` используется для управления количеством потоков для обработки запросов HTTP rpc.
 #
 # jsonrpc_http_threads=1
 
-# `jsonrpc_http_keep_alive` is used to control whether to set KeepAlive for rpc HTTP connections.
+# `jsonrpc_http_keep_alive` используется для управления установкой KeepAlive для HTTP-соединений rpc. 
 #
 # jsonrpc_http_keep_alive=false
 
-# `jsonrpc_cors` is used to control the rpc domain validation policies.
-# The value should be "none", "all", or a list string split by commas without space.
-# If not set, domain validation is disabled.
-# By default, the values are not set.
+# `jsonrpc_cors` используется для управления политиками проверки домена rpc. 
+# Значение должно быть "none", "all" или строкой списка, разделенной запятыми без пробела. 
+# Если не установлено, проверка домена отключена. 
+# По умолчанию значения не установлены. 
 #
 # jsonrpc_cors="all"
 
-# The following parameters are the ports for the node to provide rpc service. If not set,
-# the node will not start rpc services. By default, the `jsonrpc_local_http_port` is set,
-# so as to support the Conflux CLI subcommands. What's provided here is the recommended
-# value if you want to start rpc services for other front-end applications.
-# Note that to serve transaction-related RPCs, `persist_tx_index` should also be set to `true` or
-# the node will only be able to handle very recent transactions.
+# Следующие параметры являются портами для узла, чтобы обеспечить службу rpc.  Если не установлено, 
+# узел не будет запускать службы rpc.  По умолчанию установлен `jsonrpc_local_http_port`,
+# для поддержки подкоманд Conflux CLI.  Здесь представлены рекомендуемые 
+# значение, если вы хотите запустить службы rpc для других интерфейсных приложений. 
+# Обратите внимание, что для обслуживания RPC, связанных с транзакциями, `persist_tx_index` также должен быть установлен в `true` или 
+# узел сможет обрабатывать только самые последние транзакции. 
 #
 # jsonrpc_ws_port=12535
 # jsonrpc_tcp_port=12536
@@ -166,249 +166,249 @@ jsonrpc_local_http_port=12539
 # jsonrpc_http_eth_port=8545
 # jsonrpc_ws_eth_port=8546
 
-# Specify the APIs available through the public JSON-RPC interfaces (HTTP, TCP, WebSocket)
-# using a comma-delimited list of API names.
-# Possible names are: all, safe, cfx, pos, debug, pubsub, test, trace, txpool.
-# `safe` only includes `cfx` and `pubsub`, `txpool`.
+# Укажите API, доступные через общедоступные интерфейсы JSON-RPC (HTTP, TCP, WebSocket) 
+# используя список имен API, разделенных запятыми. 
+#  Возможные названия: all, safe, cfx, pos, debug, pubsub, test, trace, txpool.
+# `safe` включает только  `cfx` и `pubsub`, `txpool`.
 #
 # public_rpc_apis = "safe"
 # public_evm_rpc_apis = "evm"
 
-# --------------- Performance-related Network Parameters ----------------------
+# ---------------  Сетевые параметры, связанные с производительностью ----------------------
 
-# Timeout for block-related requests (GetBlock, GetCmpctBlock, GetBlockTxn)
+# Тайм-аут для запросов, связанных с блоком  (GetBlock, GetCmpctBlock, GetBlockTxn)
 #
 # blocks_request_timeout_ms = 20_000
 
-# Time interval to check timeout requests periodically.
+# Интервал времени для периодической проверки запросов на тайм-аут. 
 #
 # check_request_period_ms=5000
 
-# Chunk size for snapshot retrieval
+# Размер фрагмента для получения снимка(snapshot)
 #
 # chunk_size_byte = 4194304
 
-# Control whether to demote peers to unstrusted
+# Контролировать, понижать ли peers до ненадежных 
 #
 # demote_peer_for_timeout = false
 
-# Maximum network queue size. When reached, the queue will refuse any new data.
-# The unit is MB.
+# Максимальный размер сетевой очереди.  При достижении очередь откажется от любых новых данных. 
+# Единица измерения - МБ. 
 #
 # egress_queue_capacity = 256
 
-# Minimum queue size for throttling in manner of ratio.
-# The unit is MB.
+# Минимальный размер очереди для регулирования в зависимости от соотношения. 
+# Единица измерения - МБ. 
 #
 # egress_min_throttle = 10
 
-# Maximum queue size for throttling in manner of ratio.
-# The unit is MB.
+# Максимальный размер очереди для регулирования в зависимости от соотношения. 
+# Единица измерения - МБ. 
 #
 # egress_max_throttle = 10
 
-# Time interval to to garbage-collect not block-graph-ready blocks periodically.
+# Интервал времени для периодической сборки мусора (garbage-collect), не готового к блочному графу (block-graph-ready). 
 #
 # expire_block_gc_period_s = 900
 
-# Timeout for header-related requests (GetBlockHeaders)
+# Тайм-аут для запросов, связанных с заголовком (GetBlockHeaders)
 #
 # headers_request_timeout_ms=10_000
 
-# Time interval to broadcast Status as heartbeat periodically
+# Временной интервал для периодической передачи статуса в виде heartbeat  
 #
 # heartbeat_period_interval_ms = 30_000
 
-# Time to maintain transaction digests inflight status.
+# Время для поддержания статуса обработки дайджестов транзакций. 
 #
 # inflight_pending_tx_index_maintain_timeout_ms = 30_000
 
-# Maximum number of timeout allowed in `timeout_observing_period_s`.
-# If the max is reached, the peer will be disconnected.
-# `demote_peer_for_timeout` controls if the peer will be demoted in this case.
+# Максимально допустимое количество тайм-аутов в `timeout_observing_period_s`.
+# Если достигнуто максимальное значение, одноранговый узел будет отключен. 
+# `demote_peer_for_timeout`  определяет, будет ли peer понижен в этом случае. 
 #
 # max_allowed_timeout_in_observing_period = 10
 
-# Maximum number of peers to download state chunks from.
+# Максимальное количество peers, с которых можно загрузить фрагменты состояния. 
 #
 # max_download_state_peers = 8
 
-# Maximum number of handshaking sessions at the same time.
+# Максимальное количество сеансов handshaking одновременно. 
 #
 # max_handshakes = 64
 
-# Maximum number of incoming connections.
+# Максимальное количество входящих подключений. 
 #
 # max_incoming_peers = 64
 
-# Maximum number of outgoing connections.
+# Максимальное количество исходящих соединений. 
 #
 # max_outgoing_peers = 16
 
-# Maximum number of outgoing connections to archive nodes. 0 represents
-# not required to connect to archive nodes. E.g. light node or full node
-# need not to connect to archive nodes.
+# Максимальное количество исходящих подключений к узлам архива.  0 представляет 
+# не требуется подключение к узлам архива.  Например, легкий узел или полный узел 
+# не нужно подключаться к узлам архива. 
 #
 # max_outgoing_peers_archive = 0
 
-# Maximum number of inflight requests for each peer.
-# If the max is reached, requests will be buffered until inflight requests are responded or timeout.
+# Максимальное количество запросов в пути для каждого узла. 
+# Если достигнуто максимальное значение, запросы будут буферизоваться до тех пор, пока не будут получены ответы на текущие запросы или пока не истечет время ожидания. 
 #
 # max_inflight_request_count = 64
 
-# Maximum number of peers to broadcast transaction digests.
+# Максимальное количество peers для трансляции дайджестов транзакций.  =
 #
 # max_peers_tx_propagation = 128
 
-# Maximum cached received block size waiting to be processed.
+# Максимальный размер полученного кэшированного блока, ожидающего обработки. 
 #
 # max_unprocessed_block_size_mb = 128
 
-# Minimum number of peers to broadcast transaction digests.
+# Минимальное количество peers для трансляции дайджестов транзакций. 
 #
 # min_peers_tx_propagation = 8
 
-# The time to maintain received transactions to avoid duplicated requests.
+# Время сохранения полученных транзакций во избежание дублирования запросов. 
 #
 # received_tx_index_maintain_timeout_ms = 300_000
 
-# Whether to request blocks with public key during catch-up to avoid recovering
-# the public keys for transactions.
+# Запрашивать ли блоки с открытым ключом во время наверстывания, чтобы избежать восстановления 
+# открытых ключей для транзакций. 
 #
 # request_block_with_public = false
 
-# Time interval to broadcast transaction digests periodically.
+# Интервал времени для периодической рассылки дайджестов транзакций. 
 #
 # send_tx_period_ms = 1300
 
-# Timeout for requesting snapshot candidate.
+# Тайм-аут для запроса снимка-кандидата(snapshot). 
 #
 # snapshot_candidate_request_timeout_ms = 10_000
 
-# Timeout for requesting snapshot chunks.
+# Тайм-аут для запроса фрагментов снимка. 
 #
 # snapshot_chunk_request_timeout_ms = 30_000
 
-# Timeout for requesting snapshot manifests.
+# Тайм-аут для запроса манифеста моментального снимка. 
 #
 # snapshot_manifest_request_timeout_ms = 30_000
 
-# `throttling_conf` is configuration file in TOML format to throttle RPCs, P2P messages.
-# Throttling is enabled only when the parameter specified.
+# `throttling_conf` - это файл конфигурации в формате TOML для ограничения RPC и P2P-сообщений. 
+# Дросселирование включается только при указанном параметре. Throttling is enabled only when the parameter specified.
 #
 # throttling_conf="throttling.toml"
 
-# The time period to observe if a peers has too many timeouts.
+# Период времени для наблюдения за слишком большим количеством тайм-аутов пиров. 
 #
 # timeout_observing_period_s = 600
 
-# Timeout for transaction requests.
+# Тайм-аут для запросов транзакций. 
 #
 # transaction_request_timeout_ms = 30_000
 
-# Time to maintain information of sent-out transactions for answering requests.
+# Время для хранения информации об отправленных транзакциях для ответа на запросы. 
 #
 # tx_maintained_for_peer_timeout_ms = 600_000
 
-# --------------- Peer Management Parameters -------------
+# --------------- Параметры однорангового управления -------------
 
-# Timeout duration for refreshing discovery protocol when there are NOT enough outgoing connections.
+# Длительность тайм-аута для обновления протокола обнаружения, когда исходящих соединений НЕТ.
 #
 # discovery_fast_refresh_timeout_ms = 10_000
 
-# Timeout duration for initiating peer connection management.
+# Длительность тайм-аута для инициирования управления одноранговыми соединениями. 
 #
 # discovery_housekeeping_timeout_ms = 1_000
 
-# Period between consecutive rounds of the same current discovery process.
+# Период между последовательными раундами одного и того же текущего процесса обнаружения. 
 #
 # discovery_round_timeout_ms = 500
 
-# `enable_discovery` is used to control whether the node will ask its neighbors for new peers
-# and whether it will respond to other nodes' discovery requests.
+# `enable_discovery` используется для управления тем, будет ли узел запрашивать у своих соседей новых peers 
+# и будет ли он отвечать на запросы обнаружения других узлов. 
 #
 # enable_discovery=true
 
-# `netconf_dir` is the directory to store network related persistent data, including `net_key`,
-# a list of trusted nodes and a list of untrusted nodes.
+# `netconf_dir` - это каталог для хранения постоянных данных, связанных с сетью, включая `net_key`,
+# список доверенных узлов и список недоверенных узлов. 
 #
-# By default, it is stored under the directory configured with `conflux_data_dir` with the directory name `net_config`.
-# If set, the directory path will not be related to `conflux_data_dir` anymore.
+# По умолчанию он хранится в каталоге, настроенном с помощью `conflux_data_dir` с именем каталога `net_config`.
+# Если установлено, путь к каталогу больше не будет связан с `conflux_data_dir`.
 #
 # netconf_dir="./blockchain_data/net_config"
 
-# `net_key` is the 256-bit private key to generate a unique node id for this node.
-# The value is a 64-digit hex string.
-# If not set, the node will try to read from the file "key" under the directory `netconf_dir`.
-# If the file is not found, the node will generate a random key.
-# By default, the value is not set.
-# If a node is restarted, it's suggested to keep the key unchanged.
+# `net_key` - это 256-битный закрытый ключ для создания уникального идентификатора узла для этого узла.
+# Значение представляет собой 64-значную шестнадцатеричную (hex) строку.
+# Если не установлено, узел попытается прочитать файл "key" в каталоге `netconf_dir`.
+# Если файл не найден, узел сгенерирует случайный ключ. 
+# По умолчанию значение не задано. 
+# Если узел перезапускается, рекомендуется сохранить ключ без изменений. 
 #
 # net_key="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 
-# Timeout duration for persisting node table.
+# Время ожидания для сохраняемой таблицы узлов.
 #
 # node_table_timeout_s = 300
 
-# Connection lifetime threshold for promotion.
+# Порог времени жизни соединения для продвижения. 
 #
 # node_table_promotion_timeout_s = 259200
 
 
-# `session_ip_limits` limits the number of TCP connections per IP address or subnet for security consideration.
-# Its format is "n1,n2,n3,n4", where n1 is the quota of TCP connections for a single IP address, and n2/n3/n4
-# are the quotas for subnet a/b/c. The default value is "1,8,4,2", which means:
-#   1) Only 1 TCP connection allowed for a single IP address.
-#   2) 8 TCP connections allowd for subnet a, e.g. 192.xxx.xxx.xxx/8
-#   3) 4 TCP connections allowd for subnet b, e.g. 192.168.xxx.xxx/16
-#   4) 2 TCP connections allowd for subnet c, e.g. 192.169.0.xxx/24
-# Note, 0 represents unlimited.
+# `session_ip_limits`ограничивает количество TCP-соединений на IP-адрес или подсеть из соображений безопасности. 
+# Его формат "n1,n2,n3,n4",  где n1 - это квота соединений TCP для одного IP-адреса, и n2/n3/n4
+# квоты для подсети a/b/c. Значение по умолчанию — "1,8,4,2", что означает: 
+#   1) Для одного IP-адреса разрешено только 1 TCP-соединение. 
+#   2) 8 разрешенных TCP-соединений для подсети a, например 192.xxx.xxx.xxx/8
+#   3) 4 TCP-соединения разрешены для подсети b, например 192.168.xxx.xxx/16
+#   4) 2 TCP-соединения разрешены для подсети c, например 192.169.0.xxx/24
+# Обратите внимание, 0 означает неограниченное количество. 
 #
 # session_ip_limits="1,8,4,2"
 
-# `subnet_quota` limits the number of nodes for a subnet B (e.g. 192.168.xxx.xxx/16) stored in database.
+# `subnet_quota` ограничивает количество узлов для подсети в (например 192.168.xxx.xxx/16) хранящихся базах данных.
 # Nodes in database are used to establish outgoing TCP connections for P2P communications.
-# Note, 0 represents unlimited.
+# Обратите внимание, 0 означает неограниченное количество. 
 #
 # subnet_quota=32
 
-# ---------------- Block number index parameters -----------------
+# ---------------- Параметры индекса номера блока -----------------
 
-# Whether to persist block number indices.
-# This only needs to be enabled if you want to use RPCs that take block numbers as an input.
+# Сохранять ли индексы номеров блоков. 
+# Это необходимо только в том случае, если вы хотите использовать RPC, которые принимают номера блоков в качестве входных данных. 
 #
 # persist_block_number_index = true
 
-# ---------------- Transaction Cache Parameters -----------------
+# ---------------- Параметры кэша транзакций -----------------
 
-# Whether to persist transaction indices.
-# This only needs to be enabled if you want to reliably answer transaction-related RPCs.
+# Сохранять ли индексы транзакций. 
+# Это необходимо только в том случае, если вы хотите надежно отвечать на RPC, связанные с транзакциями.
 #
 # persist_tx_index = false
 
-# Time to keep transactions in in-memory transaction cache.
+# Время хранить транзакции в кэше транзакций в памяти. 
 #
 # tx_cache_index_maintain_timeout_ms = 300_000
 
-# Maximum number of transactions allowed in the transaction pool.
+# Максимальное количество транзакций, разрешенных в пуле транзакций. 
 #
 # tx_pool_size = 500_000
 
-# Minimum allowed transaction gas price in the transaction pool.
+# Минимально допустимая цена газа для транзакций в пуле транзакций. 
 #
 # tx_pool_min_tx_gas_price = 1
 
-# ------------------ Storage Parameters ----------------------
+# ------------------  Параметры хранения ----------------------
 
-# The number of additional snapshot before the current stable checkpoint that we will maintain.
-# If it's 0, all snapshot before stable genesis will be deleted and the states are unavailable.
+# Количество дополнительных снимков перед текущей стабильной контрольной точкой, которую мы будем поддерживать. 
+# Если 0, все снимки до стабильного генезиса будут удалены, а состояния недоступны. 
 #
 # additional_maintained_snapshot_count = 0
 
-# The additional number of epochs to keep different kinds of data before the current era genesis checkpoint.
-# For full/light nodes, the default value is 0, meaning all data before the era checkpoint will be removed.
-# For archive nodes, the default behavior is keeping all these data, while setting these parameters manually
-# will overwrite the default behavior of corresponding data types and garbage collect them accordingly.
+# Дополнительное количество эпох для хранения различных типов данных до текущей контрольной точки генезиса эры. 
+# Для полных/легких узлов значение по умолчанию равно 0, что означает, что все данные до контрольной точки эры будут удалены. 
+# Для архивных узлов поведение по умолчанию - хранить все эти данные, устанавливая эти параметры вручную
+# перезапишет поведение по умолчанию для соответствующих типов данных и соответственно соберет их мусор (garbage).
 #
 # additional_maintained_block_body_epoch_count = 0
 # additional_maintained_execution_result_epoch_count = 0
@@ -416,44 +416,44 @@ jsonrpc_local_http_port=12539
 # additional_maintained_trace_epoch_count = 0
 # additional_maintained_transaction_index_epoch_count = 0
 
-# Time interval to evict old data from in-memory data cache.
+# Интервал времени для удаления старых данных из кэша данных в памяти. 
 #
 # block_cache_gc_period_ms = 5_000
 
-# Database type to store block-related data.
-# Supported: rocksdb, sqlite.
+# Тип базы данных для хранения данных, связанных с блоками. 
+# Поддерживается: rocksdb, sqlite.
 #
 # block_db_type = "rocksdb"
 
-# The root directory of all data (block data, state data, and node database).
+# Корневой каталог всех данных (данные блока, данные состояния и база данных узла). 
 #
 # conflux_data_dir = "./blockchain_data"
 
-# The directory to store block-related data.
+# аталог для хранения данных, связанных с блоком. 
 #
-# By default, it is stored under the directory configured with `conflux_data_dir` with the directory name `blockchain_db`.
-# If set, the directory path will not be related to `conflux_data_dir` anymore.
+# По умолчанию он хранится в каталоге, настроенном с помощью `conflux_data_dir`, с именем каталога `blockchain_db`. 
+# Если установлено, путь к каталогу больше не будет связан с `conflux_data_dir`. 
 #
 # block_db_dir = "./blockchain_data/blockchain_db"
 
-# Maximum size of cached ledger data (block, receipts, e.t.c.)
-# The unit is MB.
+# Максимальный размер кэшированных данных леджера (блок, квитанции и т. д.) 
+# Единица измерения - МБ. 
 #
 # ledger_cache_size = 1024
 
-# Rocksdb cache size.
-# Only applies if `block_db_type = "rocksdb"`.
+# Размер кеша Rocksdb .
+# Применяется, только если `block_db_type = "rocksdb"`.
 #
 # rocksdb_cache_size = 128
 
-# Rocksdb compaction file path.
-# Only applies if `block_db_type = "rocksdb"`.
-# If not set, compaction configuration will be set automatically by rocksdb.
+# Путь к файлу сжатия Rocksdb.
+# Применяется, только если `block_db_type = "rocksdb"`.
+# Если не задано, конфигурация уплотнения будет установлена ​​автоматически с помощью rockdb.
 #
 # rocksdb_compaction_profile = "./compact_file.conf"
 
-# State storage parameters.
-# Refer to the documentation for details.
+# Параметры хранения состояния. 
+# Подробности смотрите в документации. 
 #
 # storage_delta_mpts_cache_recent_lfu_factor=4.0
 # storage_delta_mpts_cache_size=20000000
@@ -461,101 +461,101 @@ jsonrpc_local_http_port=12539
 # storage_delta_mpts_node_map_vec_size=80000000
 # storage_delta_mpts_slab_idle_size=200000
 
-# Configure the maximal open MPT count. Open MPTs are maintained as an LRU cache, and we will close the database handle
-# for the evicted MPT once its usage finishes. Every MPT contains the data written in 2000 epochs.
-# Accessing a state involves opening both its delta MPT and intermediate MPT,
-# so setting this to 4 allows to access two states at the same time. A full node always needs one latest state to
-# process new epochs, so with the default value we can frequently access one old state (by calling state-related RPCs)
-# efficiently without the overhead of opening/closing databases.
+# Настройте максимальное количество открытых MPT.  Открытые MPT поддерживаются как кэш LRU, и мы закроем дескриптор базы данных. 
+# Для удаленного MPT после завершения его использования.  Каждый MPT содержит данные, записанные в 2000 эпох. 
+# Доступ к состоянию включает в себя открытие как его дельта-MPT, так и промежуточного MPT, 
+# Таким образом, установка этого параметра на 4 позволяет получить доступ к двум состояниям. Полному узлу всегда требуется одно последнее состояние для 
+# обрабатки новой эпохи, поэтому со значением по умолчанию мы можем часто обращаться к одному старому состоянию (путем вызова RPC, связанных с состоянием) 
+# эффективно без накладных расходов на открытие/закрытие баз данных. 
 #
-# Idealy, if the RPC working set involves accessing X state ranges frequently (each range has 2000 epochs),
-# this value should be set to 2+2X to avoid thrashing.
-# However, increasing the value may increase the system memory usage by opening more database instances at the same
-# time, and the memory usage of an MPT is affected by `rocksdb_cache_size`.
+# В идеале, если рабочий набор RPC предполагает частый доступ к диапазонам состояний X (каждый диапазон имеет 2000 эпох), 
+# это значение должно быть установлено на 2+2X, чтобы избежать пробуксовки. 
+# Однако увеличение значения может привести к увеличению использования системной памяти за счет одновременного открытия большего количества экземпляров базы. 
+# время, а использование памяти MPT зависит от  `rocksdb_cache_size`.
 #
 # storage_max_open_mpt_count = 4
 
-# Configure if we strictly check the tx index before garbage collection.
-# Setting it to `false` will improve the performance. But if the value is `false`, it's possible that although the
-# epoch where a tx is executed should not be garbage collected, the tx index of this tx is removed because it's packed
-# in an already garbage collected epoch.
+# Настройте, если мы строго проверяем индекс tx перед garbage collection. 
+# Установка значения `false` улучшит производительность.  Но если значение `false`, это возможно, что хотя 
+# эпоха, когда выполняется tx, не должна быть удалена сборщиком мусора, индекс tx этого tx удаляется, потому что он запакован 
+# в эпоху garbage collected .
 #
 # strict_tx_index_gc = true
 
-# The epoch number where we want to download the state and start re-executing transactions.
-# For full nodes, if the value is not set, the parameter will not take effects.
-# For archive node, the default value is 0.
+# Номер эпохи, когда мы хотим загрузить состояние и начать повторное выполнение транзакций. 
+# Для полных узлов, если значение не установлено, параметр не будет действовать. 
+# Для узла архива значение по умолчанию равно 0. 
 #
 # sync_state_starting_epoch = 0
 
-# The number of epochs needed between our best_epoch and our neighbours' best_epoch that we want to
-# start downloading states during catching up.
+# Необходимое количество эпох между нашей best_epoch и best_epoch наших соседей, которое мы хотим 
+# начать загрузку состояний во время догоняющего. 
 #
 # sync_state_epoch_gap = 20
 
-# ------------------ Light Node Parameters ----------------------
+# ------------------ Параметры легкого узла  ----------------------
 
-# Header sync parameters.
+# Параметры синхронизации заголовков. 
 # ln_header_request_batch_size = 30
 # ln_header_request_timeout_sec = 2
 # ln_max_headers_in_flight = 1000
 
-# Epoch sync parameters.
+# Параметры синхронизации эпохи. 
 # ln_epoch_request_batch_size = 100
 # ln_epoch_request_timeout_sec = 2
 # ln_max_parallel_epochs_to_request = 10
 # ln_num_epochs_to_request = 200
 # ln_num_waiting_headers_threshold = 1000
 
-# -------------------- Trace Parameters -------------------
+# -------------------- Параметры трассировки -------------------
 
-# Whether to trace EVM execution and records the result in database.
+# Следить ли за выполнением EVM и записывать результат в базу данных. 
 #
 # executive_trace = false
 
 
-# -------------------- Others -------------------
+# -------------------- Другие  -------------------
 
-# Time (in milliseconds) after which accounts are re-read from disk.
+# Время (в миллисекундах), по истечении которого учетные записи повторно считываются с диска. 
 #
 # account_provider_refresh_time_ms = 1000
 
-# Whether to allow execution without deferring if the execution thread is idle.
+# Разрешить ли выполнение без отсрочки, если поток выполнения бездействует. 
 #
 # enable_optimistic_execution = true
 
-# Maximum number of blocks whose timestamp is in the near future is maintained in memory.
+# Максимальное количество блоков, метка времени которых находится в ближайшем будущем, сохраняется в памяти. 
 #
 # future_block_buffer_capacity = 32768
 
-# Maximum number of log entries returned from cfx_getLogs.
-# If not set, cfx_getLogs will not limit the number of logs returned.
+# Максимальное количество записей журнала, возвращаемых из cfx_getLogs.
+# Если не установлено, cfx_getLogs  не будет ограничивать количество возвращаемых журналов. 
 #
 # get_logs_filter_max_limit = 10
 
-# Epoch batch size used in log filtering.
-# Larger batch sizes may improve performance but might also prevent consensus from making progress under high RPC load.
+# Размер пакета эпохи, используемый при фильтрации журнала. 
+# Большие размеры пакетов могут повысить производительность, но также могут помешать достижению консенсуса при высокой нагрузке RPC. 
 #
 # get_logs_epoch_batch_size = 32
 
-# The maximal allowed number of epochs between `from_epoch` and `to_epoch` in the filter to call `cfx_getLogs`.
-# If not set, there is no limit on the gap.
-# By default it is not set.
+# Максимально допустимое количество эпох между `from_epoch` и `to_epoch` в фильтре для вызова `cfx_getLogs`. 
+# Если не установлено, то интервал не ограничен. 
+# По умолчанию не установлено. 
 #
 # get_logs_filter_max_epoch_range = 10000
 
-# Maximum number of transactions allowed for peers to send to a catch-up node.
+# Максимальное количество транзакций, разрешенное одноранговым узлам для отправки на догоняющий узел. 
 #
 # max_trans_count_received_in_catch_up = 60_000
 
-# The chain ID of Conflux Network (Conflux space)
-# 1 for testnet
-# 1029 for Mainnet (Hydra)
+# Сhain ID сети Conflux (Conflux space)  chain ID of Conflux Network (Conflux space)
+# 1 для тестовой сети 
+# 1029 для основной сети (Mainnet) (Hydra)
 #
 chain_id = 1029
 
-# The EVM chain ID of Conflux Network (EVM space)
-# 1030 for Mainnet (Hydra)
+# Сhain ID EVM сети Conflux (EVM space) 
+# 1030 для основной сети (Mainnet) (Hydra)
 #
 evm_chain_id = 1030
 ```
