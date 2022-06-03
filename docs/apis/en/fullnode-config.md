@@ -548,7 +548,7 @@ jsonrpc_local_http_port=12539
 #
 # max_trans_count_received_in_catch_up = 60_000
 
-# Сhain ID сети Conflux (Conflux space)  chain ID of Conflux Network (Conflux space)
+# Сhain ID сети Conflux (Conflux space) 
 # 1 для тестовой сети 
 # 1029 для основной сети (Mainnet) (Hydra)
 #
