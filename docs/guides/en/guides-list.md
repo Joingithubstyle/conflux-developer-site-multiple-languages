@@ -9,65 +9,64 @@ keywords:
   - Staking
 ---
 
-# Conflux quick start guides list
+# Список руководств по быстрому запуску Conflux 
 
-The primary purpose of this list of resources is to provide practical guidance for using CONFLUX and a quick start for any of the following activities:
+Основная цель этого списка ресурсов — предоставить практическое руководство по использованию CONFLUX и быстрое начало любого из следующих действий: 
 
-* Creating and using wallets
-* Understanding the basics 
-* Developing using CONFLUX
-* Staking 
-* Mining
-* Using ecosystem tools
-
-
-## Creating and using wallets
-
-In this section you can find the guides for wallets usage like Fluent and metamask, you can also find how to configure the wallet to connect to the mainnet, testnet, and the eSpace.
+* Создание и использование кошельков 
+* Понимание основ 
+* Разработка с использованием CONFLUX 
+* Стейкинг 
+* Майнинг
+* Использование инструментов экосистемы 
 
 
-### [How to Get Testnet CFX](https://developer.confluxnetwork.org/guides/en/how_to_use_cfx_faucet)
+## Создание и использование кошельков 
 
-Are you a new user of Conflux blockchain? Or are you a developer planning to develop a Dapp on Conflux? Then you may need some **CFX** to interact with the Conflux network. We provide the testnet CFX faucet service, which allows users to apply for the testnet CFX and experience it in the Conflux testnet environment.
+В этом разделе вы можете найти руководства по использованию таких кошельков, как Fluent и MetaMask, а также узнать, как настроить кошелек для подключения к основной сети, тестовой сети и eSpace. 
 
-### [Getting Started with MetaMask](https://developer.confluxnetwork.org/guides/en/user_metamask_interact_evmspace)
 
-**MetaMask** is a convenient UI for interacting with Ethereum-compatible blockchains (such as Conflux eSpace).
-For the purpose of this guide, we will assume you are already familiar with MetaMask and have it installed.
-If you need help getting started with MetaMask itself, [check out their documentation](https://metamask.io/faqs.html).
+### [Как получить тестовую сеть CFX](https://developer.confluxnetwork.org/guides/en/how_to_use_cfx_faucet)
 
-In this tutorial we will walk through connecting MetaMask to the Conflux eSpace Testnet , deploying a simple ERC-20 contract using **Remix**, and transferring the new token using MetaMask.
+Вы новый пользователь блокчейна Conflux? Или вы разработчик, планирующий разрабатывать Dapp на Conflux? Тогда вам может понадобиться **CFX** для взаимодействия с сетью Conflux. Мы предоставляем услугу faucet тестовой сети CFX, которая позволяет пользователям подать заявку на тестовую сеть CFX и испытать ее в среде тестовой сети Conflux.
 
-### [Conflux eSpace Guide](https://developer.confluxnetwork.org/v2-hardfork/evm_space_guide)
+### [Начало работы с MetaMask](https://developer.confluxnetwork.org/guides/en/user_metamask_interact_evmspace)
 
-This guide covers basic usage of **[Fluent Wallet](https://fluentwallet.com/)** and **[MetaMask](https://metamask.io/)** to transfer funds between Conflux **Core Space** and **Conflux eSpace**.
+**MetaMask** это удобный пользовательский интерфейс для взаимодействия с блокчейнами, совместимыми с Ethereum (такими как Conflux eSpace).
+Для целей этого руководства мы предполагаем, что вы уже знакомы с MetaMask и установили его.
+Если вам нужна помощь в начале работы с самой MetaMask,  [ознакомьтесь с их документацией](https://metamask.io/faqs.html).
+
+В этом руководстве мы рассмотрим подключение MetaMask к тестовой сети Conflux eSpace, развертывание простого контракта ERC-20 с помощью **Remix** и передачу нового токена с помощью MetaMask.
+
+### [Руководство по Conflux eSpace ](https://developer.confluxnetwork.org/v2-hardfork/evm_space_guide)
+
+В этом руководстве рассказывается об основах использования **[Fluent Wallet](https://fluentwallet.com/)** и **[MetaMask](https://metamask.io/)** для перевода средств между **Core Space** и **Conflux eSpace**.
 
 ### [Ledger Wallet](https://developer.confluxnetwork.org/sdks-and-tools/en/using_ledger_on_core)
 
-[Conflux](https://confluxnetwork.org) is a high performance distributed ledger based on the [Tree-Graph](/) concensus protocol.
-Conflux supports the Conflux native token [CFX](/introduction/en/conflux_basics), and numerous other crypto assets including [CRC20](https://confluxscan.io/tokens/crc20) and [NFT](https://confluxscan.io/tokens/crc721) tokens.
-You can now use your **Ledger Nano S** or **Ledger Nano X** hardware wallet to securely store your assets on Conflux.
-In this guide, we will show you how to install the Conflux app on your Ledger device, how to import your accounts into Fluent, and how to transfer assets on Conflux.
+[Conflux](https://confluxnetwork.org) представляет собой высокопроизводительный распределенный реестр, основанный на [Tree-Graph](/) консенсусном протоколе Conflux поддерживает собственный токен Conflux [CFX](/introduction/en/conflux_basics), и множество других криптоактивов, включая токены протокоала [CRC20](https://confluxscan.io/tokens/crc20) и [NFT](https://confluxscan.io/tokens/crc721) токены.
+Теперь вы можете использовать свой **Ledger Nano S** или **Ledger Nano X** для безопасного хранения своих активов в Conflux. 
+В этом руководстве мы покажем вам, как установить приложение Conflux на ваше устройство Ledger, как импортировать свои учетные записи во Fluent и как передавать активы в Conflux. 
 
-### [Transfer CFX to eSpace](https://evm.fluentwallet.com/)
+### [Перенос CFX в eSpace](https://evm.fluentwallet.com/)
 
-Use this [link](https://evm.fluentwallet.com/) to access the cross space bridge and transfer your CFXs betweem spaces.
+Используйте эту [ссылку](https://evm.fluentwallet.com/) чтобы получить доступ к cross space и перенести свои CFXs между spaces.
 
-### [Fluent Wallet Docs](https://fluent-wallet.zendesk.com/hc/en-001)
+### [Документация Fluent Wallet](https://fluent-wallet.zendesk.com/hc/en-001)
 
-[Fluent's developer documentation](https://fluent-wallet.zendesk.com/hc/en-001/articles/4410848191899-Provider-API) provides the information for Fluent's integration.
+[Документация для разработчиков Fluent's](https://fluent-wallet.zendesk.com/hc/en-001/articles/4410848191899-Provider-API) содержит информацию для интеграции Fluent. 
 
-## Understanding the basics 
+## Понимание основ 
 
-To learn more about CONFLUX protocol please review the links in this section.
+Чтобы узнать больше о протоколе CONFLUX, перейдите по ссылкам в этом разделе. 
 
-### [Easy to understand introduction Of Tree Graph](https://medium.com/conflux-network/understanding-the-conflux-tree-graph-consensus-algorithm-e1b57d5c3da9)
+### [Простое для понимания введение в Tree Graph ](https://medium.com/conflux-network/understanding-the-conflux-tree-graph-consensus-algorithm-e1b57d5c3da9)
 
-Conflux is based on a novel Tree-Graph consensus mechanism that optimizes for security and scalability, without sacrificing decentralization.The Tree-Graph architecture allows parallel processing of blocks and transactions, while eventually forming a final serial chain. This feature contrasts other well-known networks like Bitcoin and Ethereum, which process blocks strictly one-by-one, and is what gives Conflux its speed and scalability.
+Conflux основан на новом механизме консенсуса Tree-Graph, который оптимизирует безопасность и масштабируемость без ущерба для децентрализации. Архитектура Tree-Graph обеспечивает параллельную обработку блоков и транзакций, в конечном итоге формируя окончательную последовательную цепочку. Эта функция отличается от других известных сетей, таких как  Bitcoin и Ethereum, которые обрабатывают блоки строго один за другим, и это то, что придает Conflux его скорость и масштабируемость. 
 
-### [Conflux Network: Engineering An Economic Design](https://confluxnetwork.org/files/Conflux_Economic_Paper_20201230.pdf)
+### [Conflux Network: инженерно-экономичный дизайн](https://confluxnetwork.org/files/Conflux_Economic_Paper_20201230.pdf)
 
-Distributed ledgers or blockchains, in particular those based on Proof-of-Work (PoW) protocols, rely as much on economic mechanisms as on technology. [In this paper]((https://confluxnetwork.org/files/Conflux_Economic_Paper_20201230.pdf)), we describe how we  approach the design of the economic mechanisms that underline Conflux, a high throughput/performance PoW blockchain, by providing a detailed analysis of its economic viability. Conflux  offers several innovations relative to well-understood blockchain networks such as Bitcoin and Ethereum, both in terms of technology design but also in terms of the economics that  underpin the technology.
+Распределенные реестры или блокчейны, в частности основанные на протоколах Proof-of-Work (PoW), опираются как на экономические механизмы, так и на технологии. [В этой статье],(https://confluxnetwork.org/files/Conflux_Economic_Paper_20201230.pdf),мы описываем, как мы подходим к разработке экономических механизмов, лежащих в основе Conflux, блокчейна PoW с высокой пропускной способностью и производительностью, путем предоставления подробного анализа его экономической жизнеспособности. Conflux предлагает несколько инноваций по сравнению с хорошо изученными сетями блокчейнов, такими как Биткойн и Эфириум, как с точки зрения технологического дизайна, так и с точки зрения экономики, лежащей в основе технологии.
 
 ## Developing using CONFLUX
 
