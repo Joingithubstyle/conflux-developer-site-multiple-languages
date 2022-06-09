@@ -68,90 +68,88 @@ Conflux основан на новом механизме консенсуса T
 
 Распределенные реестры или блокчейны, в частности основанные на протоколах Proof-of-Work (PoW), опираются как на экономические механизмы, так и на технологии. [В этой статье](https://confluxnetwork.org/files/Conflux_Economic_Paper_20201230.pdf), мы описываем, как мы подходим к разработке экономических механизмов, лежащих в основе Conflux, блокчейна PoW с высокой пропускной способностью и производительностью, путем предоставления подробного анализа его экономической жизнеспособности. Conflux предлагает несколько инноваций по сравнению с хорошо изученными сетями блокчейнов, такими как Биткойн и Эфириум, как с точки зрения технологического дизайна, так и с точки зрения экономики, лежащей в основе технологии.
 
-## Developing using CONFLUX
+## Разработка с использованием CONFLUX 
 
-This section list the SDKs, tools and resources needed to start developing using Conflux.
+В этом разделе перечислены SDK, инструменты и ресурсы, необходимые для начала разработки с использованием Conflux. 
 
-### [How to Quickly Deploy a CRC20 Token](https://developer.confluxnetwork.org/guides/en/how_to_deploy_erc20_token)
+### [Как быстро развернуть токен CRC20 ](https://developer.confluxnetwork.org/guides/en/how_to_deploy_erc20_token)
 
-Conflux provides a compatible EVM virtual machine so that the Ethereum contracts can be quickly deployed on the Conflux network. The Conflux's token standard CRC20 and CRC721 are also compatible with Ethereum's, meaning that an ERC20 contract that can be used directly to create a CRC20 Token on the Conflux network.
-This article will demonstrate how to quickly deploy a CRC20 contract on the Conflux testnet using [conflux-truffle](https://www.npmjs.com/package/conflux-truffle).
+Conflux предоставляет совместимую виртуальную машину EVM, чтобы контракты Ethereum можно было быстро развернуть в сети Conflux. Стандарт токена Conflux CRC20 и CRC721 также совместим со стандартом Ethereum, что означает, что контракт ERC20 можно использовать непосредственно для создания токена CRC20 в сети Conflux. В этой статье показано, как быстро развернуть контракт CRC20 в тестовой сети Conflux с помощью [conflux-truffle](https://www.npmjs.com/package/conflux-truffle).
 
-### [SDKs](https://developer.confluxnetwork.org/sdks-and-tools/en/conflux_sdks)
+### [SDK](https://developer.confluxnetwork.org/sdks-and-tools/en/conflux_sdks)
 
-Conflux has SDKs for mainstream programming languages, including `JavaScript`, `Golang`, `Java` and `Python`. This is just a short introduction to the SDKs, for detailed usage info, check their respective documentation.
+Conflux имеет SDK для основных языков программирования, в том числе `JavaScript`, `Golang`, `Java` и `Python. Это всего лишь краткое введение в SDK. Подробную информацию об использовании см. в соответствующей документации. 
 
-### [Tools](https://developer.confluxnetwork.org/sdks-and-tools/en/conflux_tools)
+### [Инструменты ](https://developer.confluxnetwork.org/sdks-and-tools/en/conflux_tools)
 
-Conflux has tools that can help developers quickly build a dapp.
+В Conflux есть инструменты, которые могут помочь разработчикам быстро создать децентрализованное приложение. 
 
-### [Introduction to Smart Contracts](https://developer.confluxnetwork.org/contract/en/contract_introduction)
+### [Введение в смарт-контракты](https://developer.confluxnetwork.org/contract/en/contract_introduction)
 
-For Conflux network, a "smart contract" is a simple program that runs on the Conflux chain. Each instance of a smart contract is a collection of code and data that resides at a specific address on the Conflux chain. Since the state on the blockchain is fully deterministic, operations on smart contracts are guaranteed to produce the same results on all blockchain nodes. Furthermore, since smart contracts run on the blockchain, the decentralization and non-tamperable characteristics of the blockchain ensure certainty and security in the operation of the contract. Therefore, a wide range of decentralized applications (DApps) are created based on smart contracts, including games, digital collectibles, online voting systems, financial products, etc.
+Для сети Conflux "смарт-контракт" — это простая программа, которая работает в цепочке Conflux. Каждый экземпляр смарт-контракта представляет собой набор кода и данных, которые находятся по определенному адресу в цепочке Conflux. Поскольку состояние в блокчейне полностью детерминировано, операции со смарт-контрактами гарантированно приведут к одинаковым результатам на всех узлах блокчейна. Кроме того, поскольку смарт-контракты работают на блокчейне, характеристики децентрализации и защиты от несанкционированного доступа обеспечивают надежность и безопасность работы контракта. Поэтому на основе смарт-контрактов создается широкий спектр децентрализованных приложений (DApps), включая игры, цифровые предметы коллекционирования, системы онлайн-голосования, финансовые продукты и т. д. 
 
-### [Solidity Tutorial](https://confluxnetwork365-my.sharepoint.com/:w:/g/personal/luis_miguel_confluxnetwork_org/EX3TjDKiC4pJtPdHYWrvaacBzi08qE0u9SE9_4XtEOtPWQ?e=7PZNQy) 
+### [Учебное пособие по Solidity](https://confluxnetwork365-my.sharepoint.com/:w:/g/personal/luis_miguel_confluxnetwork_org/EX3TjDKiC4pJtPdHYWrvaacBzi08qE0u9SE9_4XtEOtPWQ?e=7PZNQy) 
 
-Solidity is the programming language that makes those awesome NFTs and DeFi protocols and applications possible. We call those applications DApps because they are “Decentralized Applications”. Solidity makes these applications possible by giving developers an easy, and understandable programming language that is the way to make complex distributed applications. 
+Solidity — это язык программирования, который делает возможным использование этих замечательных протоколов и приложений NFT и DeFi. Мы называем эти приложения DApps, потому что они являются «децентрализованными приложениями». Solidity делает эти приложения возможными, предоставляя разработчикам простой и понятный язык программирования, с помощью которого можно создавать сложные распределенные приложения.  
 
-### [NFTs Minting and Contract Interaction](https://docs.google.com/document/d/1ijsf5QfnxPq7DHOFCPIJKlcD7VomqUFDbUEWyuwKmxM)
+### [Минтинг NFT и взаимодействие с контрактами ](https://docs.google.com/document/d/1ijsf5QfnxPq7DHOFCPIJKlcD7VomqUFDbUEWyuwKmxM)
 
-This document is a general guide for contracts development and testing, it has the following sections:
-* **Conflux Development Environment Configuration.** This section shows all the tools and frameworks needed to test the Contracts and DApps.
-* **Conflux FrontEnd React Dapp.** This section explains how to launch and configure the Conflux FrontEnd DApp which uses the js-conflux-sdk and is using the framework ReactJS for the front end.
-* **How to deploy your own contract to Conflux Testnet.** On this section you will find the instructions to download a github repository with an ERC1155 smart contract that can be used with the DApps in this guide, feel free to change and test the code in the smart contract, deploying it to testnet and integrating it with Conflux FrontEnd DApp.
-CONFLUX MINTING DAPP. This section shows how to configure the minting DApp and Mint an ERC721 NFT with the contract in the solution.
-Have fun testing the smart contracts and DApps, and let us know your comments.
+Этот документ представляет собой общее руководство по разработке и тестированию контрактов и состоит из следующих разделов: 
+* **Конфигурация среды разработки Conflux.** В этом разделе показаны все инструменты и фреймворки, необходимые для тестирования контрактов и DApps приложений.
+* **Conflux FrontEnd React Dapp.** В этом разделе объясняется, как запустить и настроить DApp Conflux FrontEnd, который использует js-conflux-sdk и использует фреймворк ReactJS для внешнего интерфейса. 
+* **Как развернуть собственный контракт в Conflux Testnet.** В этом разделе вы найдете инструкции по загрузке репозитория github со смарт-контрактом ERC1155, который можно использовать с DApps в этом руководстве, не стесняйтесь изменять и тестировать код в смарт-контракте, развертывая его в тестовой сети и интегрируя с Conflux FrontEnd DApp.
+CONFLUX MINTING DAPP. В этом разделе показано, как настроить чеканку DApp и чеканить ERC721 NFT с контрактом в решении.
+Получайте удовольствие от тестирования смарт-контрактов и DApps и дайте нам знать ваши комментарии.
 
-## Staking 
+## Стейкинг 
 
-In this section we provide a list of resources to help investors to participate in the PoS validation protocol. CFX holders can deposit to a specific contract to claim voting rights on the PoS chain. The PoS chain uses a Verifiable source of randomness to select the nodes with voting rights. The committee is temporary and will rotate periodically every six hours. The terms are staggered, approximately one-sixth of committee seats are up for election every hour (The design of this CIP is relatively complex, and there may be an adjustment for parameters at a later time). The interest can only be generated by staking on the PoS chain.
+В этом разделе мы предоставляем список ресурсов, которые помогут инвесторам участвовать в протоколе проверки PoS. Владельцы CFX могут внести депозит в конкретный контракт, чтобы претендовать на право голоса в цепочке PoS. Цепочка PoS использует проверяемый источник случайности для выбора узлов с правом голоса. Комитет является временным и будет периодически меняться каждые шесть часов. Сроки распределены в шахматном порядке, примерно одна шестая мест в комитетах выставляется на выборы каждый час (схема этого CIP относительно сложна, и в более позднее время могут быть внесены коррективы по параметрам). Процент может быть получен только за счет ставок в цепочке PoS. 
 
-### [Eth2Stake - The PoS Staking Guide for Ethereans (Bridging ETH for Staking on Conflux PoS)](https://forum.conflux.fun/t/eth2stake-the-pos-staking-guide-for-ethereans-bridging-eth-for-staking-on-conflux-pos/13839)
+### [Eth2Stake — руководство по стейкингу PoS для Ethereans (Bridging ETH для стейкинга на Conflux PoS)  Ethereans)](https://forum.conflux.fun/t/eth2stake-the-pos-staking-guide-for-ethereans-bridging-eth-for-staking-on-conflux-pos/13839)
 
-In this tutorial, you’ll learn how to bridge ETH and staking on the Conflux PoS Finality Layer.
+В этом руководстве вы узнаете, как объединить ETH и стейкинг на Conflux PoS Finality Layer. 
 
-### [From Binance CFX (bCFX) to PoS Staking on Conflux](https://medium.com/@cfx_miguel/from-bcfx-to-pos-staking-on-conflux-dca0df638233)
+### [От Binance CFX (bCFX) к PoS-стейкингу на Conflux ](https://medium.com/@cfx_miguel/from-bcfx-to-pos-staking-on-conflux-dca0df638233)
 
-Binance users who have bCFX can easily stake them on the Conflux PoS network. This guide will walk you through the process of bridging your bCFX to Conflux and staking them.
+Пользователи Binance, у которых есть bCFX, могут легко поставить их в сеть Conflux PoS. Это руководство проведет вас через процесс подключения вашего bCFX к Conflux и их стейкинга. 
 
-### [PoS Pool Economics (APY)](https://forum.conflux.fun/t/the-beavers-guide-to-calculating-block-rewards-when-staking-in-the-pos-finality-chain/13900) 
+### [Экономика PoS-пула (APY))](https://forum.conflux.fun/t/the-beavers-guide-to-calculating-block-rewards-when-staking-in-the-pos-finality-chain/13900) 
 
-Learn how to calculate the PoS block validation rewards (staking rewards) when staking in the PoS Finality Chain.
+Узнайте, как рассчитать вознаграждение за проверку блока PoS (вознаграждение за стейкинг) при стейкинге в цепочке PoS Finality. 
 
-## Mining
+## Майнинг
 
-In Conflux, miners receive direct revenue from three sources: block rewards, user fees, and interest paid on the tokens that users need to deposit as bonds when they want to store
-data on the blockchain. In this section we provide a list of resources to help miners to configure a node and participate in the PoW mining.
+В Conflux майнеры получают прямой доход из трех источников: вознаграждение за блок, комиссионные сборы и проценты, выплачиваемые за токены, которые пользователи должны депонировать в виде облигаций, когда они хотят хранить их. данные в блокчейне. В этом разделе мы предоставляем список ресурсов, которые помогут майнерам настроить узел и участвовать в майнинге PoW. 
 
-### [Get Conflux Client](https://developer.confluxnetwork.org/run-a-node/en/how_to_get)
+### [Получить клиент Conflux ](https://developer.confluxnetwork.org/run-a-node/en/how_to_get)
 
-[Conflux-rust](https://github.com/conflux-chain/conflux-rust) is a high-performance implementation of the Conflux protocol developed by the foundation with the Rust language. Conflux-rust is a Conflux node that connects to other nodes on the Conflux network and provides an RPC interface that you can use to query and interact with the blockchain. It is also a command-line tool that manages local accounts and conducts RPC interaction with nodes. 
+[Conflux-rust](https://github.com/conflux-chain/conflux-rust) это высокопроизводительная реализация протокола Conflux, разработанная фондом на языке Rust. Conflux-rust — это узел Conflux, который подключается к другим узлам в сети Conflux и предоставляет интерфейс RPC, который вы можете использовать для запросов и взаимодействия с блокчейном. Это также инструмент командной строки, который управляет локальными учетными записями и осуществляет RPC-взаимодействие с узлами. 
 
-### [Run a Node](https://developer.confluxnetwork.org/conflux-doc/docs/get_started)
+### [Запустить узел](https://developer.confluxnetwork.org/conflux-doc/docs/get_started)
 
-Here we walk through how to quickly setup conflux full node to join the conflux network and how to use Conflux wallet to manage your account, transfer Conflux token, and deploy smart contract.
+Здесь мы рассмотрим, как быстро настроить полный узел Conflux для присоединения к сети Conflux и как использовать кошелек Conflux для управления своей учетной записью, передачи токена Conflux и развертывания смарт-контракта. 
 
-### [How to Start a Fullnode Tutorial（Conflux v2.0.0-fix)](https://forum.conflux.fun/t/how-to-start-a-fullnode-tutorial-conflux-v2-0-0-fix/13471)
+### [Как начать обучение по полному узлу (исправление Conflux v2.0.0)](https://forum.conflux.fun/t/how-to-start-a-fullnode-tutorial-conflux-v2-0-0-fix/13471)
 
-Use this guide to configure your own full node and participate in the PoS validation protocol or in the PoW mining.
+Используйте это руководство, чтобы настроить свой собственный полный узел и участвовать в протоколе проверки PoS или в майнинге PoW. 
 
-### [PoS Registration Tutorial (Conflux v2.0.0-fix)](https://forum.conflux.fun/t/pos-registration-tutorial-conflux-v2-0-0-fix/13469)
+### [Учебное пособие по регистрации PoS (исправление Conflux v2.0.0))](https://forum.conflux.fun/t/pos-registration-tutorial-conflux-v2-0-0-fix/13469)
 
-This tutorial shows how to register your node to participate in the PoS validation protocol.
+В этом руководстве показано, как зарегистрировать свой узел для участия в протоколе проверки PoS. 
 
-### [Launching an AWS instance for a PoS Pool](https://forum.conflux.fun/t/running-a-pos-node-on-aws-server-setup-node-configuration/13998)
+### [Запуск экземпляра AWS для пула PoS](https://forum.conflux.fun/t/running-a-pos-node-on-aws-server-setup-node-configuration/13998)
 
-This is the first tutorial in a multi-part series on running a Conflux PoS staking pool. This tutorial will help you set up a PoS node on AWS. Once you complete this tutorial, you’ll be able to continue with [this guide](https://developer.confluxnetwork.org/run-a-node/en/pos_staking/) to install a PoS pool.
+Это первое руководство из серии, состоящей из нескольких частей, по запуску стейкинг-пула Conflux PoS. Это руководство поможет вам настроить узел PoS на AWS. После завершения этого руководства вы сможете продолжить работу с, [этим руководством](https://developer.confluxnetwork.org/run-a-node/en/pos_staking/) чтобы установить пул PoS. 
 
-### [Configuring PoS Node + Launching PoS Pool](https://developer.confluxnetwork.org/run-a-node/en/pos_staking/)
+### [Настройка узла PoS + запуск пула PoS](https://developer.confluxnetwork.org/run-a-node/en/pos_staking/)
 
-In this tutorial we present a guide for how to deploy, configure and manage a POS Pool that will allow CONFLUX holders to join to the PoS protocol just interacting with the front-end application of the PoS Pool and without dealing with the technical complexities.
+В этом руководстве мы представляем руководство по развертыванию, настройке и управлению пулом POS, которое позволит держателям CONFLUX присоединиться к протоколу PoS, просто взаимодействуя с интерфейсным приложением пула PoS и не сталкиваясь с техническими сложностями. 
 
-## Using ecosystem tools
+## Использование инструментов экосистемы 
 
 ### [ShuttleFlow](https://forum.conflux.fun/t/shuttleflow-v1-4-0-tutorial-token-captain-removed/9214)
 
-ShuttleFlow utilizes Conflux Network as a cross-chain hub to enable seamless flow of different assets across multiple blockchain networks.
+ShuttleFlow использует Conflux Network в качестве кроссчейн-концентратора, чтобы обеспечить беспрепятственный поток различных активов через несколько сетей блокчейнов. 
 
 
 
